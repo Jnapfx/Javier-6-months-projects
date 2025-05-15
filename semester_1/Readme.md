@@ -1,8 +1,3 @@
 # DAE projects
-## Testing
+## Javier Napoles
 
-google 
-
-[Visit Google](https://www.google.com)
-
-![KD](KD.jpg)    
