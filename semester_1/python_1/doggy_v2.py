@@ -15,7 +15,7 @@ def get_recommendations():
     energy = answers.get("Energy Level")
     size = answers.get("Dog Size")
     fetch = answers.get("Likes Fetch?")
-    water = answers.get("Likes Water?")
+    swimming = answers.get("Likes Swimming?")
     mental = answers.get("Enjoys Mental Challenges?")
 
     recommendations = []
