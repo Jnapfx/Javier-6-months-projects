@@ -56,9 +56,3 @@ jobs:
             }
           ' .github/work/commits_block.md docs/index.md > docs/index.md.new
           mv docs/index.md.new docs/index.md
-
-      - name: Commit changes
-        uses: stefanzweifel/git-auto-commit-action@v5
-        with:
-          commit_message: "chore: update latest commits section"
-          file_pattern: docs/index.md
