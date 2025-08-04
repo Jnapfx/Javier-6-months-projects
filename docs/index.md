@@ -23,12 +23,9 @@ This site showcases the skills, projects, and progress I’ve made in tech and s
 </ul>
 
 <!-- COMMITS-START -->
-- [refactor: improved titles on project pages in GitHub Pages](https://github.com/Jnapfx/Javier-6-months-projects/commit/3c45fb13b91da4014a8ae3faa6caf440ff913a4d) (3c45fb1) [2025-07-31]
-- [chore: update latest commits section](https://github.com/Jnapfx/Javier-6-months-projects/commit/b8e6cd70e0a084825d7a81d65eb370dc9018bb13) (b8e6cd7) [2025-08-01]
-- [fix: repaired broken photo links on project page in GitHub Pages](https://github.com/Jnapfx/Javier-6-months-projects/commit/3ed319ce76b1dbe77fc96620eeb3a9c742b51db2) (3ed319c) [2025-07-31]
-- [chore: update latest commits section](https://github.com/Jnapfx/Javier-6-months-projects/commit/cbb789ac2daedbe2f541dbca4c91d1c399ac6610) (cbb789a) [2025-08-01]
-- [chore: general improvements on main_project page](https://github.com/Jnapfx/Javier-6-months-projects/commit/8baa0940442fec777688cc37b50b8bfd7af28056) (8baa094) [2025-07-31]
+- [Test pushing](https://github.com/Jnapfx/Javier-6-months-projects/commit/2018f418be8f0720e33b03e224b708d38980279f) (2018f41) [2025-08-04]
 <!-- COMMITS-END -->
+
 
 
 
