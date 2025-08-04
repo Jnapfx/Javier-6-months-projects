@@ -1,0 +1,20 @@
+# Sitio básico
+theme: minima
+baseurl: "/Javier-6-months-projects" # importante para rutas correctas
+url: "https://jnapfx.github.io"
+tittle: "Home"
+# Navegación del header
+header_pages:
+  - index.md
+  - projects.md
+  - main_project.md
+  - gallery.md
+
+# Autor
+author:
+  name: Javier Napoles
+  email: jnapfx@gmail.com
+
+
+# Markdown
+markdown: kramdown

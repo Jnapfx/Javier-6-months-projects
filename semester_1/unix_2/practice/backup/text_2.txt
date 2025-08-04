@@ -1,0 +1,3 @@
+I'm testing the nano function in the terminal
+
+I'm testing the vim function in the terminal

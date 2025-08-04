@@ -1,0 +1,64 @@
+name: Update Home Page with Latest Commits
+
+on:
+  push:
+    branches: [ main ]
+    # Avoid retriggering the workflow when it only updates the page
+    paths-ignore:
+      - 'docs/index.md'
+  workflow_dispatch: {}   # allow manual runs from the Actions tab
+
+permissions:
+  contents: write   # required to push changes back
+
+jobs:
+  update-home:
+    # Extra guard against loops if a push is from the bot itself
+    if: ${{ github.actor != 'github-actions[bot]' }}
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0   # needed so `git log -n 5` can see history
+
+      - name: Build commits block
+        run: |
+          REPO_URL="https://github.com/${GITHUB_REPOSITORY}/commit"
+          mkdir -p .github/work
+          {
+            echo "<!-- COMMITS-START -->"
+            git log -n 5 --date=short \
+              --pretty=format:"- [%s](${REPO_URL}/%H) (%h) [%ad]"
+            echo ""
+            echo "<!-- COMMITS-END -->"
+          } > .github/work/commits_block.md
+
+      - name: Ensure markers exist (first run only)
+        run: |
+          if ! grep -q "<!-- COMMITS-START -->" docs/index.md; then
+            {
+              echo ""
+              echo "## Latest commits"
+              cat .github/work/commits_block.md
+            } >> docs/index.md
+          fi
+
+      - name: Replace section between markers
+        run: |
+          awk -v start="<!-- COMMITS-START -->" -v end="<!-- COMMITS-END -->" '
+            FNR==NR { block = block $0 ORS; next }        # read replacement block
+            {
+              if (index($0, start)) { print block; skip=1; next }
+              if (index($0, end))   { skip=0; next }
+              if (!skip) print
+            }
+          ' .github/work/commits_block.md docs/index.md > docs/index.md.new
+          mv docs/index.md.new docs/index.md
+
+      - name: Commit changes
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore: update latest commits section"
+          file_pattern: docs/index.md

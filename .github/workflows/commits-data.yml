@@ -1,0 +1,31 @@
+name: Update latest commits data
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 */6 * * *" # every 6 hours; adjust as needed
+permissions:
+  contents: write
+jobs:
+  update-data:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Fetch last 5 commits (main) to JSON
+        run: |
+          mkdir -p _data
+          curl -sSL \
+            -H "Accept: application/vnd.github+json" \
+            "https://api.github.com/repos/Jnapfx/Javier-6-months-projects/commits?per_page=5&sha=main" \
+          | jq '[ .[] | {
+              html_url: .html_url,
+              sha: .sha,
+              message: .commit.message,
+              author: (.commit.author.name // .author.login // "Unknown"),
+              date: .commit.author.date
+            } ]' > _data/latest_commits.json
+      - name: Commit changes
+        uses: EndBug/add-and-commit@v9
+        with:
+          add: "_data/latest_commits.json"
+          message: "chore(data): update latest commits JSON"
+          default_author: github_actions
