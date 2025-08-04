@@ -23,8 +23,11 @@ This site showcases the skills, projects, and progress I’ve made in tech and s
 </ul>
 
 <!-- COMMITS-START -->
+- [chore: added 4th semester folder with complete project structure](https://github.com/Jnapfx/Javier-6-months-projects/commit/da998e86f4b85704e362a066b73ac8d662f85b71) (da998e8) [2025-08-04]
+- [chore: update latest commits section](https://github.com/Jnapfx/Javier-6-months-projects/commit/2fd446f35a7784fa52df1d333a8815c242132386) (2fd446f) [2025-08-04]
 - [Test pushing](https://github.com/Jnapfx/Javier-6-months-projects/commit/2018f418be8f0720e33b03e224b708d38980279f) (2018f41) [2025-08-04]
 <!-- COMMITS-END -->
+
 
 
 
