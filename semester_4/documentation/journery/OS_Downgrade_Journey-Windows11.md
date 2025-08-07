@@ -82,7 +82,7 @@ Installing and configuring Wazuh on Windows 10.
 To be continued.
 
 ---
----
+![I'm tired boss](https://www.meme-arsenal.com/memes/8d07373af86531363dea578a85d3417b.jpg)
 ---
 ---
 
@@ -175,3 +175,6 @@ Una vez completado el downgrade, el objetivo principal será:
 
 Instalar y configurar Wazuh en Windows 10.  
 Continuará.
+
+![Estoy cansado jefe](https://slm-assets.secondlife.com/assets/33973239/lightbox/image.jpg?1695056043)
+
