@@ -51,7 +51,9 @@ Take a look around:
 Thanks for visiting! Let’s connect and grow together. 🚀
 
 
-
+<div style="text-align:center; margin-top:2rem;">
+  <img src="{{ '/assets/img/dae-logo.jpg' | relative_url }}" alt="DAE Logo" style="height:40px; opacity:0.8;">
+</div>
 
 
 

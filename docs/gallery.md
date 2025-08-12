@@ -30,3 +30,7 @@ These are photos from some of our class days:
 
 ![DAE 5](../assets/images/DAEphotos/DAE_3_weeksprogram5.jpg)
 
+
+<div style="text-align:center; margin-top:2rem;">
+  <img src="{{ '/assets/img/dae-logo.jpg' | relative_url }}" alt="DAE Logo" style="height:40px; opacity:0.8;">
+</div>

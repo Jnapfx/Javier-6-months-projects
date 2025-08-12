@@ -65,3 +65,7 @@ Dog Activity Recommender is a program that suggests fun activities for your dog 
   <img src="https://raw.githubusercontent.com/Jnapfx/Javier-6-months-projects/refs/heads/main/docs/assets/images/python_app/screen_2.png" alt="Screen 2" width="250"/>
   <img src="https://raw.githubusercontent.com/Jnapfx/Javier-6-months-projects/refs/heads/main/docs/assets/images/python_app/screen_3.png" alt="Screen 3" width="250"/>
 </p>
+
+<div style="text-align:center; margin-top:2rem;">
+  <img src="{{ '/assets/img/dae-logo.jpg' | relative_url }}" alt="DAE Logo" style="height:40px; opacity:0.8;">
+</div>
