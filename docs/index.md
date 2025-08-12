@@ -2,6 +2,17 @@
   <img src="assets/images/javier_headshot.jpeg" alt="Javier Profile" width="300" style="border-radius: 6%;">
 </p>
 
+
+<div style="display:flex; gap:20px; align-items:center; flex-wrap:wrap; margin-bottom:2rem; padding:1.5rem; background:#f8f9fa; border-radius:8px;">
+  <img src="{{ 'assets/images/javier_headshot.jpeg' | relative_url }}" alt="Headshot of Javier Napoles" 
+       style="max-width:160px; border-radius:50%; box-shadow:0 4px 12px rgba(0,0,0,.15);">
+  <div>
+    <h1 style="margin:0; color:#2c3e50;">Javier Napoles</h1>
+    <p style="margin:.5rem 0; font-size:1.1rem; color:#34495e;">Cybersecurity Student · Graduating Oct 2025</p>
+    <p style="margin:.5rem 0; line-height:1.6;">Focused on SOC analysis and blue-team operations. I build labs, tune detections, and document repeatable security playbooks for enterprise environments.</p>
+  </div>
+</div>
+
 ## 👋 Welcome to My Portfolio
 
 Hi there! I'm **Javier**, a creative thinker turned cybersecurity enthusiast with a background in graphic design and threat detection.  
