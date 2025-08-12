@@ -48,7 +48,15 @@ This site showcases the skills, projects, and progress I’ve made in tech and s
 
 
 
-
+<div style="display:flex; gap:20px; align-items:center; flex-wrap:wrap; margin-bottom:2rem; padding:1.5rem; background:#f8f9fa; border-radius:8px;">
+ 
+  <div>
+    - 🐙 [Check out my Github](https://github.com/Jnapfx) </h1>
+    - 🛠️ [View My Projects](projects.md)</p>
+    - 📄 [Download My Resume](assets/files/JAVIER_RESUME.pdf)
+    - 💼 [Connect on LinkedIn](https://www.linkedin.com/in/javier-napoles-3513031a7)
+  </div>
+</div>
 
 ---
 Take a look around:
