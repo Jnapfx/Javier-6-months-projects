@@ -86,6 +86,6 @@ This project simulates the core responsibilities of a SOC Analyst by building a 
 
 <iframe width="100%" height="150" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1475634163&color=%23ff5500&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/wonderlandbeats-chill" title="WonderlandBeats(Chill &amp; Relax Mixes on YouTube)" target="_blank" style="color: #cccccc; text-decoration: none;">WonderlandBeats(Chill &amp; Relax Mixes on YouTube)</a> · <a href="https://soundcloud.com/wonderlandbeats-chill/sets/zelda-lofi-relax-music" title="🗡️ Zelda Chill Music 🗡️ Relaxed Lofi Music | Chill + Instrumental Ambient | Legend of Zelda" target="_blank" style="color: #cccccc; text-decoration: none;">🗡️ Zelda Chill Music 🗡️ Relaxed Lofi Music | Chill + Instrumental Ambient | Legend of Zelda</a></div>
 
-<div style="text-align:center; margin-top:2rem;">
+<div style="text-align:left; margin-top:2rem;">
   <img src="{{ '/assets/img/dae_logo.png' | relative_url }}" alt="DAE Logo" style="height:40px; opacity:0.8;">
 </div>
