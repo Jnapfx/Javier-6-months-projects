@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/images/Javier.jpg" alt="Javier Profile" width="300" style="border-radius: 6%;">
+  <img src="assets/images/javier_headshot.jpeg" alt="Javier Profile" width="300" style="border-radius: 6%;">
 </p>
 
 ## 👋 Welcome to My Portfolio
