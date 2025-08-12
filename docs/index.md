@@ -7,14 +7,9 @@
   <div>
     <h1 style="margin:0; color:#2c3e50;">Javier Napoles</h1>
     <p style="margin:.5rem 0; font-size:1.1rem; color:#34495e;">Cybersecurity Student · Graduating Oct 2025</p>
-    <p style="margin:.5rem 0; line-height:1.6;"> Focused on SOC analysis and blue-team operations. I build labs, tune detections, and document repeatable security playbooks for enterprise environments.</p>
+    <p style="margin:.5rem 0; line-height:1.6;"> Hi there! I’m **Javier** — a creative thinker turned cybersecurity enthusiast, blending a background in graphic design with hands-on experience in threat detection. My journey combines a sharp eye for detail from the design world with a passion for securing enterprise environments through SOC analysis and blue-team operations. I build labs, tune detections, and document repeatable security playbooks, showcasing my skills, projects, and progress as I grow in tech and security.</p>
   </div>
 </div>
-
-## 👋 Welcome to My Portfolio
-
-Hi there! I'm **Javier**, a creative thinker turned cybersecurity enthusiast with a background in graphic design and threat detection.  
-This site showcases the skills, projects, and progress I’ve made in tech and security.
 
 
 ---
