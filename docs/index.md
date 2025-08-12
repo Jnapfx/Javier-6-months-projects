@@ -1,6 +1,4 @@
-<p align="center">
-  <img src="assets/images/javier_headshot.jpeg" alt="Javier Profile" width="300" style="border-radius: 6%;">
-</p>
+
 
 
 <div style="display:flex; gap:20px; align-items:center; flex-wrap:wrap; margin-bottom:2rem; padding:1.5rem; background:#f8f9fa; border-radius:8px;">
