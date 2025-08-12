@@ -32,5 +32,5 @@ These are photos from some of our class days:
 
 
 <div style="text-align:center; margin-top:2rem;">
-  <img src="{{ '/assets/img/dae-logo.jpg' | relative_url }}" alt="DAE Logo" style="height:40px; opacity:0.8;">
+  <img src="{{ '/assets/img/dae_logo.png' | relative_url }}" alt="DAE Logo" style="height:40px; opacity:0.8;">
 </div>
