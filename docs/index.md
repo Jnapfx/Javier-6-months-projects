@@ -12,8 +12,6 @@
 </div>
 
 
-
----
 Take a look around:
 - 🐙 [Check out my Github](https://github.com/Jnapfx)  
 - 🛠️ [View My Projects](projects.md)  
