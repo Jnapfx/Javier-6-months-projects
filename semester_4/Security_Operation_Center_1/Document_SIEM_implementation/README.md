@@ -27,7 +27,9 @@ graph TD
 ```
 
 📷 **Architecture:**  
-![SIEM Architecture Diagram](screenshots/siem-architecture.png)
+
+<img src="screenshots\SIEM_arquitecture.png" width="50%" />
+
 
 ---
 
@@ -49,7 +51,8 @@ graph TD
 - **Device Example**: `Edge-FW` via syslog UDP/514
 
 📷 **Log Sources:**  
-![Log Sources Config](screenshots/log-sources.png)
+
+<img src="screenshots/log-sources.png" width="50%" />
 
 ---
 
@@ -82,7 +85,8 @@ Detect a potential **Brute Force SSH** from the same source IP with ≥5 failed 
 **Test Evidence:** Rule matched **7 events** from `203.0.113.57` on **2025-08-13**.
 
 📷 **Correlation Rule:**  
-![Correlation Rule](screenshots/correlation-rule.png)
+
+<img src="screenshots/correlation-rule.png" width="50%" />
 
 ---
 
@@ -103,7 +107,10 @@ Update `ossec.conf` on the manager:
 **Verification:** SMTP test successful at **2025-08-13 00:00**.
 
 📷 **Email Alerts:**  
-![Email Alerts](screenshots/email-alerts.png)
+
+<img src="screenshots/email-alerts.png.png" width="50%" />
+
+
 
 ---
 
@@ -114,7 +121,8 @@ Update `ossec.conf` on the manager:
 - **Notifications** to distribute high-severity events via email.
 
 📷 **Dashboard:**  
-![SIEM Dashboard](screenshots/siem-dashboard.png)
+
+<img src="screenshots/siem-dashboard.png" width="50%" />
 
 ---
 
