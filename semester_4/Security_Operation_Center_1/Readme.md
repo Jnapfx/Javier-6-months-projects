@@ -1,54 +1,58 @@
-# 4th Semester Cybersecurity Projects: SOC Lab + Security Monitoring
+# Security Operations Center 1 
 
-This repository documents two hands-on projects completed during my 4th semester of cybersecurity training. Both simulate key SOC Analyst responsibilities and emphasize practical implementation of open-source tools, real-time monitoring, and defensive strategies.
+## Divide & Defend: A Hands-On SOC Lab Project with Micro-Segmentation
 
----
+This project simulates the core responsibilities of a SOC Analyst by building a functional lab environment using virtual machines (VMs) and open-source security tools. It emphasizes hands-on experience with threat detection, alert triage, and incident response workflows.
 
+A key focus of the project is the implementation of **micro-segmentation**—a proactive network defense strategy that isolates assets to reduce attack surfaces and contain threats more effectively.
 
-## Project: Divide & Defend – SOC Lab with Micro-Segmentation
-
-This project simulates the core duties of a SOC Analyst by building a virtual lab using Parrot OS, Kali Linux, and essential SOC tools. It emphasizes threat detection, alert triage, and incident response. A key focus is **micro-segmentation**—a proactive approach to isolating network assets to reduce attack surfaces and improve threat containment.
-
-### Key Components:
-- **SOC Operations Documentation**  
-  Includes SIEM, ticketing, and monitoring platforms, with alert handling diagrams and shift handoff workflows.
-- **SIEM Implementation**  
-  Wazuh setup, correlation rule creation, log source integration, and alert notification configuration.
-- **Threat Detection Principles**  
-  Detection rule logic, indicator analysis, and alert investigation.
-- **Incident Response Methodology**  
-  Step-by-step response playbooks, escalation paths, and case documentation.
-
-### 🧰 Tools Used:
-Parrot OS, Kali Linux, Wazuh, OpenCTI, Nmap, OpenVAS, SET, Mermaid.js
-
-> 🧭 *This project is ongoing. Future updates will include advanced segmentation, new detection rules, and refined IR playbooks.*
+> 🧭 **Note:** This project is part of my 4th semester cybersecurity training. The lab is actively evolving as I continue to build, test, and document more advanced SOC operations and security controls.
 
 ---
 
-## Project 2: Security Monitoring 1 – Wazuh Lab Deployment & Analysis
+##  Semester Project Breakdown (SOC 1)
 
-This project builds a real-time monitoring environment using Wazuh and simulates the role of a Security Monitoring Analyst. It covers log collection, alert validation, and actionable reporting with a focus on maintaining system health and detection visibility.
+### 1. SOC Operations Documentation
+- Describes essential SOC tools: SIEM, ticketing systems, and monitoring platforms.
+- Includes a Mermaid diagram showing alert handling workflows and escalation paths.
+- Details shift transition procedures and incident handover requirements.
+- Provides screenshots and clear explanations of operational tools.
 
-### Key Components:
-- **Monitoring Environment Setup**  
-  Wazuh deployment, multi-source log integration, and alert rule creation for auth, file access, and network events.
-- **Security Event Analysis**  
-  Log interpretation, basic correlation, and full incident timelines with severity classification.
-- **Monitoring Implementation**  
-  Architecture diagrams, data flow mapping, baseline performance tracking, and health checks.
-- **Security Reporting**  
-  Documentation templates, trend analysis, dashboards, and professional reporting structure.
+### 2. SIEM Implementation
+- Explains SIEM architecture and component relationships.
+- Creates a sample correlation rule using a provided template/tool.
+- Identifies at least 3 key log sources and their relevance in security monitoring.
+- Documents notification configurations and provides annotated screenshots.
 
-### Tools Used:
-Wazuh, Kibana, Filebeat, Winlogbeat, Parrot OS, Windows VM (UTM), Mermaid.js
+### 3. Threat Detection Principles
+- Documents 3 distinct detection scenarios with rule logic and use cases.
+- Describes various threat indicator categories and their role in alerting.
+- Follows a structured threat analysis methodology.
+- Includes a guided alert investigation with findings and screenshots.
 
-> 🚧 *This monitoring lab is still growing with improved correlation logic, health automation, and enhanced dashboards.*
+### 4. Incident Response Methodology
+- Documents incident response protocols by incident type.
+- Details escalation paths, communication procedures, and case management elements.
+- Uses a scenario-based documentation template with realistic steps.
+- Highlights key decision points in the incident lifecycle.
 
 ---
 
-## Author Notes
+## Tools & Platforms Used
+- 🐧 Parrot OS and Kali Linux (via UTM)
+- 🧰 Wazuh (SIEM)
+- 🕵️‍♂️ OpenCTI (Threat Intelligence)
+- 🧱 Mermaid.js (Diagramming)
+- 📊 Nmap / OpenVAS (Scanning & Discovery)
+- ⚙️ SET (Phishing Simulations)
 
-Both projects are part of my **Semester 4 cybersecurity training**, designed to strengthen real-world SOC and monitoring skills through simulation, tooling, and documentation. These environments will serve as foundations for future threat detection, automation, and IR development.
+---
 
-Stay tuned for continued updates and integrations!
+## 🚧 Work in Progress
+This lab continues to evolve as part of my ongoing 4th semester work. Upcoming updates will include:
+- Expanded use cases for SIEM and alerting
+- More micro-segmentation policies
+- Deeper threat intel ingestion via OpenCTI
+- Improved response playbooks and automation
+
+Stay tuned!
