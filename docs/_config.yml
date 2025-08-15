@@ -1,16 +1,16 @@
 # =====================
 # SITE BASICS
 # =====================
-title: "Javier Napoles — SOC Analyst & Graphic Designer"
-description: "Portfolio showcasing SOC Projects, and case studies."
-url: "hhttps://jnapfx.github.io" # ← Your actual GitHub username
-baseurl: "/DAE-Demo/theme2" # ← Subdirectory path for theme2
+title: "Alex Rivera — Cybersecurity & Backend Developer"
+description: "Portfolio showcasing secure backend systems, automation, and case studies."
+url: "https://jnapfx.github.io" # ← Your actual GitHub username
+baseurl: "/DAE-Demo" # ← Your actual repository name
 
 # =====================
-# THEME (Dark Modern)
+# THEME (Modern)
 # =====================
 remote_theme: "mmistakes/minimal-mistakes"
-minimal_mistakes_skin: "dark"
+minimal_mistakes_skin: "default"
 
 # =====================
 # AUTHOR PROFILE
@@ -19,7 +19,7 @@ author:
     name: "Javier Napoles"
     avatar: "/assets/img/pinky.jpg" # ← Fixed from .heic
     bio: "Cybersecurity & backend developer focused on secure-by-default services."
-    email: "jnapfx@gmail.com"
+    email: "alex.rivera@example.com"
     links:
         - label: "GitHub"
           icon: "fab fa-github"

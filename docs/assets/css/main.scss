@@ -3,105 +3,57 @@
 
 @charset "utf-8";
 
-@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'dark' }}";
+@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}";
 @import "minimal-mistakes";
 
-/* Dark Cyberpunk Theme - Custom styles */
+/* Custom styles for the GitHub Pages site */
 
-:root {
-    --neon-cyan: #00ffff;
-    --neon-pink: #ff0080;
-    --neon-green: #39ff14;
-    --dark-bg: #0a0a0a;
-    --darker-bg: #050505;
-    --card-bg: #1a1a1a;
-    --text-primary: #ffffff;
-    --text-secondary: #b0b0b0;
-    --accent-gradient: linear-gradient(135deg, #00ffff 0%, #ff0080 100%);
-}
-
-/* Global dark theme overrides */
-body {
-    background: var(--dark-bg);
-    color: var(--text-primary);
-    font-family: 'Courier New', monospace;
-}
-
-/* Neon glow effect for images */
+/* Enhanced image styling */
 .rounded-image {
     border-radius: 50%;
-    box-shadow: 0 0 20px var(--neon-cyan), 0 0 40px var(--neon-cyan), 0 0 60px var(--neon-cyan);
-    transition: all 0.3s ease;
-    border: 2px solid var(--neon-cyan);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .rounded-image:hover {
-    transform: scale(1.1) rotate(5deg);
-    box-shadow: 0 0 30px var(--neon-pink), 0 0 60px var(--neon-pink), 0 0 90px var(--neon-pink);
-    border-color: var(--neon-pink);
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
 }
 
 img.rounded {
     border-radius: 12px;
-    border: 1px solid var(--neon-cyan);
-    box-shadow: 0 0 15px rgba(0, 255, 255, 0.3);
 }
 
-/* Cyberpunk header styling */
+/* Professional header styling */
 .professional-header {
     text-align: center;
-    padding: 3rem 0;
-    background: linear-gradient(135deg, #000000 0%, #1a1a1a 50%, #000000 100%);
-    color: var(--text-primary);
+    padding: 2rem 0;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
     margin-bottom: 2rem;
-    border-radius: 15px;
-    border: 2px solid var(--neon-cyan);
-    box-shadow: 0 0 30px rgba(0, 255, 255, 0.3);
-    position: relative;
-    overflow: hidden;
-}
-
-.professional-header::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 100%;
-    background: var(--accent-gradient);
-    opacity: 0.1;
-    animation: scan 3s infinite;
-}
-
-@keyframes scan {
-    0% { left: -100%; }
-    100% { left: 100%; }
+    border-radius: 10px;
 }
 
 .site-header {
-    background: var(--darker-bg);
-    color: var(--text-primary);
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
     padding: 1rem 0;
-    border-bottom: 2px solid var(--neon-cyan);
 }
 
 .site-title {
     font-weight: 700;
     font-size: 1.8rem;
     margin: 0;
-    color: var(--neon-cyan);
-    text-shadow: 0 0 10px var(--neon-cyan);
 }
 
-/* Cyberpunk footer */
+/* Enhanced footer */
 .footer-note {
     text-align: center;
     margin-top: 3rem;
     padding: 2rem 1rem;
-    background: var(--card-bg);
-    border-top: 3px solid var(--neon-cyan);
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    border-top: 3px solid #007bff;
     border-radius: 8px 8px 0 0;
-    box-shadow: 0 0 20px rgba(0, 255, 255, 0.2);
 }
 
 .footer-note .dae-logo {
@@ -118,101 +70,56 @@ img.rounded {
     vertical-align: middle;
 }
 
-/* Cyberpunk project cards styling */
+/* Project cards styling */
 .project-card {
-    background: var(--card-bg);
-    border: 2px solid var(--neon-cyan);
-    border-radius: 15px;
+    background: #f8f9fa;
+    border: 1px solid #e9ecef;
+    border-radius: 10px;
     padding: 1.5rem;
     margin-bottom: 2rem;
-    box-shadow: 0 0 20px rgba(0, 255, 255, 0.3);
-    transition: all 0.3s ease;
-    position: relative;
-    overflow: hidden;
-}
-
-.project-card::before {
-    content: '';
-    position: absolute;
-    top: -2px;
-    left: -2px;
-    right: -2px;
-    bottom: -2px;
-    background: var(--accent-gradient);
-    border-radius: 15px;
-    z-index: -1;
-    opacity: 0;
-    transition: opacity 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .project-card:hover {
-    transform: translateY(-10px) scale(1.02);
-    box-shadow: 0 0 40px var(--neon-pink), 0 0 60px rgba(255, 0, 128, 0.3);
-    border-color: var(--neon-pink);
-}
-
-.project-card:hover::before {
-    opacity: 0.3;
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
 }
 
 .project-card h2 {
-    color: var(--neon-cyan);
+    color: #2c3e50;
     margin-bottom: 1rem;
-    text-shadow: 0 0 10px var(--neon-cyan);
 }
 
 .project-card .tech-stack {
-    background: rgba(0, 255, 255, 0.1);
-    border: 1px solid var(--neon-green);
+    background: #e3f2fd;
     padding: 0.5rem 1rem;
     border-radius: 20px;
     display: inline-block;
     margin: 0.25rem;
     font-size: 0.9rem;
-    color: var(--neon-green);
-    box-shadow: 0 0 10px rgba(57, 255, 20, 0.3);
+    color: #1976d2;
 }
 
-/* Cyberpunk profile header styling */
+/* Profile header styling */
 .profile-header {
     text-align: center;
-    padding: 3rem 0;
-    background: linear-gradient(135deg, var(--darker-bg) 0%, var(--card-bg) 50%, var(--darker-bg) 100%);
-    color: var(--text-primary);
+    padding: 2rem 0;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
     margin-bottom: 2rem;
-    border-radius: 15px;
-    border: 2px solid var(--neon-pink);
-    box-shadow: 0 0 30px rgba(255, 0, 128, 0.3);
-    position: relative;
-    overflow: hidden;
-}
-
-.profile-header::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: repeating-linear-gradient(
-        90deg,
-        transparent,
-        transparent 98px,
-        rgba(0, 255, 255, 0.03) 100px
-    );
-    pointer-events: none;
+    border-radius: 10px;
 }
 
 .profile-header img {
     width: 150px;
     height: 150px;
     border-radius: 50%;
-    border: 4px solid var(--neon-pink);
+    border: 4px solid white;
     margin-bottom: 1rem;
-    box-shadow: 0 0 30px var(--neon-pink);
 }
 
-/* Cyberpunk skills and certifications */
+/* Skills and certifications */
 .skills-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -221,25 +128,15 @@ img.rounded {
 }
 
 .skill-category {
-    background: var(--card-bg);
+    background: #f8f9fa;
     padding: 1.5rem;
-    border-radius: 12px;
-    border: 2px solid var(--neon-green);
-    box-shadow: 0 0 20px rgba(57, 255, 20, 0.2);
-    transition: all 0.3s ease;
-    position: relative;
-}
-
-.skill-category:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 0 30px rgba(57, 255, 20, 0.4);
-    border-color: var(--neon-cyan);
+    border-radius: 8px;
+    border-left: 4px solid #007bff;
 }
 
 .skill-category h3 {
-    color: var(--neon-green);
+    color: #2c3e50;
     margin-bottom: 1rem;
-    text-shadow: 0 0 10px var(--neon-green);
 }
 
 .skill-category ul {
@@ -248,61 +145,8 @@ img.rounded {
 }
 
 .skill-category li {
-    padding: 0.5rem 0;
-    border-bottom: 1px solid rgba(0, 255, 255, 0.2);
-    color: var(--text-secondary);
-    transition: color 0.3s ease;
-}
-
-.skill-category li:hover {
-    color: var(--neon-cyan);
-    text-shadow: 0 0 5px var(--neon-cyan);
-}
-
-/* Additional cyberpunk elements */
-.masthead {
-    background: var(--darker-bg) !important;
-    border-bottom: 2px solid var(--neon-cyan);
-}
-
-.page__content h1, .page__content h2, .page__content h3 {
-    color: var(--neon-cyan);
-    text-shadow: 0 0 10px var(--neon-cyan);
-}
-
-.page__content p {
-    color: var(--text-secondary);
-}
-
-.page__content a {
-    color: var(--neon-pink);
-    text-decoration: none;
-    transition: all 0.3s ease;
-}
-
-.page__content a:hover {
-    color: var(--neon-cyan);
-    text-shadow: 0 0 5px var(--neon-cyan);
-}
-
-/* Navigation styling */
-.greedy-nav {
-    background: var(--darker-bg) !important;
-}
-
-.greedy-nav a {
-    color: var(--text-primary) !important;
-    transition: all 0.3s ease;
-}
-
-.greedy-nav a:hover {
-    color: var(--neon-cyan) !important;
-    text-shadow: 0 0 5px var(--neon-cyan);
-}
-
-.greedy-nav .site-title {
-    color: var(--neon-cyan) !important;
-    text-shadow: 0 0 10px var(--neon-cyan);
+    padding: 0.25rem 0;
+    border-bottom: 1px solid #e9ecef;
 }
 
 .skill-category li:last-child {

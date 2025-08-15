@@ -1,73 +1,87 @@
 ---
-title: "Contact - Establish Connection"
+title: "Contact"
 permalink: /contact/
 layout: single
 ---
 
-<div class="profile-header">
-  <img src="{{ '/assets/img/pinky.jpg' | relative_url }}" alt="Alex Rivera" class="rounded-image">
-  <h2>ESTABLISH CONNECTION</h2>
-  <p style="font-size:1.1rem; opacity:0.8;">Ready to discuss cybersecurity, secure development, and new opportunities</p>
+<div style="text-align:center; margin-bottom:3rem;">
+  <img src="{{ '/assets/img/pinky.jpg' | relative_url }}" alt="Alex Rivera" 
+       style="max-width:150px; border-radius:50%; box-shadow:0 4px 12px rgba(0,0,0,.15);">
+  <h2 style="margin:1rem 0 0.5rem; color:#2c3e50;">Let's Connect</h2>
+  <p style="color:#7f8c8d; font-size:1.1rem;">I'm always interested in discussing cybersecurity, backend development, and new opportunities.</p>
 </div>
 
-## 📡 COMMUNICATION CHANNELS
+## 📬 Get in Touch
 
-<div style="font-family: 'Courier New', monospace; background: var(--card-bg); padding: 1.5rem; border-radius: 10px; border: 1px solid var(--neon-cyan); margin: 2rem 0;">
-  <p style="color: var(--neon-green); margin: 0.5rem 0;">> Initializing secure communication protocols...</p>
-  <p style="color: var(--neon-cyan); margin: 0.5rem 0;">> Multiple channels available</p>
-  <p style="color: var(--text-secondary); margin: 0.5rem 0;">> Select preferred method below</p>
-</div>
-
-<div style="display:grid; gap:2rem; margin:3rem 0;">
+<div style="display:grid; gap:1.5rem; margin:2rem 0;">
   
-  <div style="background: var(--card-bg); padding:2rem; border-radius:12px; border: 2px solid var(--neon-cyan); box-shadow: 0 0 20px rgba(0, 255, 255, 0.2);">
-    <h3 style="margin:0 0 1rem; color: var(--neon-cyan); text-shadow: 0 0 10px var(--neon-cyan);">📧 PRIMARY CHANNEL</h3>
-    <p style="margin:0; font-size:1.2rem;"><a href="mailto:alex.rivera@email.com" style="color: var(--neon-pink); text-decoration:none;">alex.rivera@email.com</a></p>
-    <p style="margin:1rem 0 0; color: var(--text-secondary); font-size:0.9rem;">→ Professional inquiries and detailed technical discussions</p>
-    <p style="margin:0.5rem 0 0; color: var(--text-secondary); font-size:0.9rem;">→ Response time: 24-48 hours</p>
+  <div style="background:#f8f9fa; padding:1.5rem; border-radius:8px; border-left:4px solid #007bff;">
+    <h3 style="margin:0 0 0.5rem; color:#2c3e50;">📧 Email</h3>
+    <p style="margin:0; font-size:1.1rem;"><a href="mailto:alex.rivera@email.com" style="color:#007bff; text-decoration:none;">alex.rivera@email.com</a></p>
+    <p style="margin:0.5rem 0 0; color:#6c757d; font-size:0.9rem;">Best for professional inquiries and detailed discussions</p>
   </div>
   
-  <div style="background: var(--card-bg); padding:2rem; border-radius:12px; border: 2px solid var(--neon-pink); box-shadow: 0 0 20px rgba(255, 0, 128, 0.2);">
-    <h3 style="margin:0 0 1rem; color: var(--neon-pink); text-shadow: 0 0 10px var(--neon-pink);">💼 PROFESSIONAL NETWORK</h3>
-    <p style="margin:0; font-size:1.2rem;"><a href="https://linkedin.com/in/alexrivera" style="color: var(--neon-cyan); text-decoration:none;">linkedin.com/in/alexrivera</a></p>
-    <p style="margin:1rem 0 0; color: var(--text-secondary); font-size:0.9rem;">→ Career opportunities and professional networking</p>
-    <p style="margin:0.5rem 0 0; color: var(--text-secondary); font-size:0.9rem;">→ Industry connections and updates</p>
+  <div style="background:#f8f9fa; padding:1.5rem; border-radius:8px; border-left:4px solid #0077b5;">
+    <h3 style="margin:0 0 0.5rem; color:#2c3e50;">💼 LinkedIn</h3>
+    <p style="margin:0; font-size:1.1rem;"><a href="https://linkedin.com/in/alexrivera" style="color:#0077b5; text-decoration:none;">linkedin.com/in/alexrivera</a></p>
+    <p style="margin:0.5rem 0 0; color:#6c757d; font-size:0.9rem;">Connect for networking and professional updates</p>
   </div>
   
-  <div style="background: var(--card-bg); padding:2rem; border-radius:12px; border: 2px solid var(--neon-green); box-shadow: 0 0 20px rgba(57, 255, 20, 0.2);">
-    <h3 style="margin:0 0 1rem; color: var(--neon-green); text-shadow: 0 0 10px var(--neon-green);">🐙 CODE REPOSITORY</h3>
-    <p style="margin:0; font-size:1.2rem;"><a href="https://github.com/alexrivera" style="color: var(--neon-cyan); text-decoration:none;">github.com/alexrivera</a></p>
-    <p style="margin:1rem 0 0; color: var(--text-secondary); font-size:0.9rem;">→ Explore security projects and contributions</p>
-    <p style="margin:0.5rem 0 0; color: var(--text-secondary); font-size:0.9rem;">→ Open source collaboration</p>
+  <div style="background:#f8f9fa; padding:1.5rem; border-radius:8px; border-left:4px solid #333;">
+    <h3 style="margin:0 0 0.5rem; color:#2c3e50;">🐙 GitHub</h3>
+    <p style="margin:0; font-size:1.1rem;"><a href="https://github.com/alexrivera" style="color:#333; text-decoration:none;">github.com/alexrivera</a></p>
+    <p style="margin:0.5rem 0 0; color:#6c757d; font-size:0.9rem;">Explore my code, projects, and contributions</p>
   </div>
   
-</div>
-
 </div>
 
 ---
 
-## 🔒 SECURE COMMUNICATION PROTOCOL
+## 🎯 What I'm Looking For
 
-<div style="background: var(--card-bg); padding: 2rem; border-radius: 12px; border: 2px solid var(--neon-green); margin: 2rem 0; box-shadow: 0 0 20px rgba(57, 255, 20, 0.2);">
-  <h3 style="color: var(--neon-green); margin-bottom: 1rem; text-shadow: 0 0 10px var(--neon-green);">RESPONSE PARAMETERS</h3>
+<div style="background:#e8f4fd; padding:2rem; border-radius:8px; margin:2rem 0;">
+  <h3 style="margin:0 0 1rem; color:#2c3e50;">Security Engineering Opportunities</h3>
+  <p style="margin:0 0 1rem; line-height:1.6;">I'm actively seeking <strong>Security Engineer</strong> or <strong>SOC Analyst</strong> roles where I can:</p>
   
-  <div style="font-family: 'Courier New', monospace; margin: 1rem 0;">
-    <p style="color: var(--neon-cyan); margin: 0.5rem 0;">→ Email responses: 24-48 hours</p>
-    <p style="color: var(--neon-cyan); margin: 0.5rem 0;">→ LinkedIn messages: 48-72 hours</p>
-    <p style="color: var(--neon-cyan); margin: 0.5rem 0;">→ GitHub collaboration: Real-time</p>
-  </div>
-  
-  <p style="color: var(--text-secondary); margin-top: 1.5rem; font-style: italic;">All communications encrypted and secure. Professional inquiries prioritized.</p>
+  <ul style="margin:0; padding-left:1.5rem; line-height:1.8;">
+    <li>🛡️ Build and maintain security monitoring systems</li>
+    <li>🔍 Develop threat detection and response capabilities</li>
+    <li>🤝 Collaborate with cross-functional teams on security initiatives</li>
+    <li>📚 Continue learning from experienced security professionals</li>
+    <li>🚀 Contribute to innovative security solutions</li>
+  </ul>
 </div>
 
-<div style="text-align:center; margin-top:3rem; padding:2rem; background: linear-gradient(135deg, var(--card-bg) 0%, rgba(0, 255, 255, 0.1) 100%); border-radius:12px; border: 1px solid var(--neon-cyan);">
-  <h3 style="margin:0 0 1rem; color: var(--neon-cyan); text-shadow: 0 0 10px var(--neon-cyan);">CONNECTION ESTABLISHED</h3>
-  <p style="margin:0 0 1.5rem; color: var(--text-secondary);">Ready to discuss security challenges, collaboration opportunities, or the latest in cybersecurity.</p>
+## 💬 Let's Discuss
+
+<div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(250px, 1fr)); gap:1rem; margin:2rem 0;">
   
-  <a href="mailto:alex.rivera@email.com" style="background: var(--accent-gradient); color: var(--text-primary); padding:1rem 2rem; text-decoration:none; border-radius:8px; font-weight:bold; display:inline-block; border: 2px solid var(--neon-cyan); box-shadow: 0 0 15px rgba(0, 255, 255, 0.3); transition: all 0.3s ease;">INITIATE CONTACT</a>
+  <div style="background:#fff3cd; padding:1rem; border-radius:6px; text-align:center;">
+    <h4 style="margin:0 0 0.5rem; color:#856404;">🔐 Cybersecurity</h4>
+    <p style="margin:0; font-size:0.9rem; color:#6c757d;">SOC operations, threat hunting, incident response</p>
+  </div>
   
-  <div style="margin-top:2rem; opacity: 0.6;">
-    <img src="{{ '/assets/img/dae-logo.jpg' | relative_url }}" alt="DAE Logo" style="height:35px; filter: brightness(0) invert(1);">
+  <div style="background:#d1ecf1; padding:1rem; border-radius:6px; text-align:center;">
+    <h4 style="margin:0 0 0.5rem; color:#0c5460;">⚙️ Backend Development</h4>
+    <p style="margin:0; font-size:0.9rem; color:#6c757d;">Secure APIs, authentication, system architecture</p>
+  </div>
+  
+  <div style="background:#d4edda; padding:1rem; border-radius:6px; text-align:center;">
+    <h4 style="margin:0 0 0.5rem; color:#155724;">☁️ Cloud Security</h4>
+    <p style="margin:0; font-size:0.9rem; color:#6c757d;">AWS/Azure security, infrastructure protection</p>
+  </div>
+  
+</div>
+
+---
+
+<div style="text-align:center; margin-top:3rem; padding:2rem; background:#f8f9fa; border-radius:8px;">
+  <h3 style="margin:0 0 1rem; color:#2c3e50;">Ready to Connect?</h3>
+  <p style="margin:0 0 1.5rem; color:#6c757d;">Whether you're looking to discuss security challenges, explore collaboration opportunities, or just want to chat about the latest in cybersecurity, I'd love to hear from you!</p>
+  
+  <a href="mailto:alex.rivera@email.com" style="background:#007bff; color:white; padding:0.75rem 1.5rem; text-decoration:none; border-radius:6px; font-weight:bold; display:inline-block;">Send me an email</a>
+  
+  <div style="margin-top:2rem;">
+    <img src="{{ '/assets/img/dae-logo.jpg' | relative_url }}" alt="DAE Logo" style="height:35px; opacity:0.7;">
   </div>
 </div>
