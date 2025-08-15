@@ -1,42 +1,23 @@
-# =====================
-# SITE BASICS
-# =====================
-title: "Javier Napoles — SOC Analyst & Graphic Designer"
-description: "Portfolio showcasing SOC Labs projects, and case studies."
-url: "https://jnapfx.github.io" # ← Your actual GitHub username
-baseurl: "/Javier-6-months-projects" # ← Subdirectory path for theme1
+# Sitio básico
+theme: minima
+baseurl: "/Javier-6-months-projects" # importante para rutas correctas
+url: "https://jnapfx.github.io"
+tittle: "Home"
+# Navegación del header
+header_pages:
+  - index.md
+  - projects.md
+  - main_project.md
+  - gallery.md
 
-# =====================
-# THEME (Modern)
-# =====================
-remote_theme: "mmistakes/minimal-mistakes"
-minimal_mistakes_skin: "default"
-
-# =====================
-# AUTHOR PROFILE
-# =====================
+# Autor
 author:
-    name: "Javier Napoles"
-    avatar: "/assets/img/javier_headshot.jpeg" # ← Fixed from .heic
-    bio: "Graphic designer turning into SOC Analyst."
-    email: "jnapfx@gmail.com"
-    links:
-        - label: "GitHub"
-          icon: "fab fa-github"
-          url: "https://github.com/Jnapfx"
-        - label: "LinkedIn"
-          icon: "fab fa-linkedin"
-          url: "https://www.linkedin.com/in/javier-napoles-3513031a7/"
+  name: Javier Napoles
+  email: jnapfx@gmail.com
 
-# =====================
-# NAVIGATION (top menu)
-# =====================
-# Navigation is configured in _data/navigation.yml for Minimal Mistakes theme
-
-# =====================
 # BRANDING
 # =====================
-logo: "/assets/img/dae-logo.png" # ← Fixed from .avif
+logo: "/assets/img/dae_logo.png" # 
 
 # =====================
 # PLUGINS (safe + GitHub Pages supported)
@@ -54,34 +35,3 @@ markdown: kramdown
 highlighter: rouge
 permalink: pretty
 
-# =====================
-# GLOBAL DEFAULTS (keeps layout consistent)
-# =====================
-# These defaults apply Minimal Mistakes' single-page layout with a sticky ToC.
-# They won't break Minima; Minima ignores unknown front matter values.
-defaults:
-    - scope:
-          path: ""
-          type: "pages"
-      values:
-          layout: single
-          toc: true
-          toc_sticky: true
-          author_profile: true
-
-# =====================
-# EXCLUDES (keep the build clean)
-# =====================
-# GitHub Pages handles these exclusions automatically
-# exclude:
-#     - README.md
-#     - Gemfile
-#     - Gemfile.lock
-#     - .sass-cache/
-#     - .jekyll-cache/
-#     - gemfiles/
-#     - node_modules/
-#     - vendor/bundle/
-#     - vendor/cache/
-#     - vendor/gems/
-#     - vendor/ruby/
