@@ -312,46 +312,59 @@ img.rounded {
     }
 }
 
-/* ===== Sticky header + centered nav (overrides for Minimal Mistakes) ===== */
-.masthead,
-.site-header {
-  position: sticky;
-  top: 0;
-  z-index: 9999;
-  background: rgba(255, 255, 255, 0.96);
-  backdrop-filter: saturate(120%) blur(6px);
-  border-bottom: 1px solid #eaeaea;
-}
+/* ===== Navbar v4: sticky + centered on desktop, hamburger on mobile ===== */
 
-.masthead .site-title,
-.site-header .site-title {
-  font-size: 1rem;
-  font-weight: 600;
-  margin: 0;
-}
+/* (Keep previous sticky/visual styles if already present) */
 
-.site-logo img { height: 28px; }
+/* Hide title text across viewports (leave only logo) */
+.masthead .site-title, .site-header .site-title { display: none !important; }
 
+/* Desktop: center nav links */
 .greedy-nav { display: flex; align-items: center; justify-content: center; }
-.greedy-nav .site-title { margin: 0 1rem 0 0; flex: 0 0 auto; }
-.greedy-nav .visible-links { display: flex; justify-content: center; margin: 0 auto; gap: .75rem; }
-.greedy-nav .visible-links > li > a { padding: .9rem 1.1rem; font-weight: 600; }
+.greedy-nav .visible-links { display: flex; justify-content: center; margin: 0 auto; gap: .5rem; }
+.greedy-nav .visible-links > li > a { padding: .8rem .9rem; font-weight: 600; }
 
-@media (max-width: 768px) {
-  .masthead .site-title, .site-header .site-title { display: none; } /* dejar solo el logo/ícono del tema */
-  .greedy-nav .visible-links > li > a { padding: .8rem 1rem; text-align: center; }
+/* Hamburger toggle hidden on desktop */
+.greedy-nav .greedy-nav__toggle { display: none; }
+
+/* --- Mobile breakpoint --- */
+@media (max-width: 900px) {
+  /* Layout: logo left, toggle right */
+  .greedy-nav { justify-content: space-between; padding-right: .5rem; position: relative; }
+  /* Start hidden; becomes visible when nav has .is-open */
+  .greedy-nav .visible-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0.75rem;
+    right: 0.75rem;
+    background: #fff;
+    border: 1px solid #eaeaea;
+    border-radius: 12px;
+    padding: .5rem;
+    box-shadow: 0 10px 30px rgba(0,0,0,.08);
+    z-index: 10000;
+  }
+  .greedy-nav.is-open .visible-links { display: flex; }
+
+  /* Show hamburger button */
+  .greedy-nav .greedy-nav__toggle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border: 0;
+    background: transparent;
+    cursor: pointer;
+    border-radius: 10px;
+  }
+  .greedy-nav .greedy-nav__toggle:focus { outline: 2px solid #4c9ffe; outline-offset: 2px; }
+
+  /* Link spacing tighter for small screens */
+  .greedy-nav .visible-links > li > a {
+    padding: .7rem .85rem;
+    text-align: center;
+  }
 }
-
-/* Dropdown positioning */
-.greedy-nav .hidden-links {
-  position: absolute;
-  top: 100%;
-  right: 0;
-  background: #fff;
-  border: 1px solid #eaeaea;
-  box-shadow: 0 6px 24px rgba(0,0,0,.08);
-}
-
-/* Avoid content underlap */
-body { padding-top: 64px; }
-html  { scroll-padding-top: 72px; }

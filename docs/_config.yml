@@ -36,3 +36,4 @@ defaults:
     author_profile: true
 footer_scripts:
 - /assets/js/dae-link.js
+- /assets/js/mobile-menu.js
