@@ -50,7 +50,7 @@ dog
 - 📄 **Export to .TXT File**  
   Save activity results to a text file for easy reference.
 
-## 🚀 Future Plans
+### 🚀 Future Plans
 
 - 🤖 **AI-Powered Recommendations**  
   In future releases, we plan to integrate AI features that will make the activity suggestions smarter and virtually infinite — dynamically adapting to your dog's evolving needs, preferences, and behavior patterns.
@@ -81,15 +81,16 @@ dog
 This project simulates the core responsibilities of a **SOC Analyst** by building a functional lab environment using virtual machines and open-source tools. It emphasizes practical skills in threat detection, alert triage, and incident response. A key focus is the use of **micro-segmentation** as a proactive defense strategy to enhance network security.
 
 **Key Components:**
-- 📊 **Automated Alert Triage**: ML-based alert prioritization
-- 🔍 **Threat Intelligence Integration**: MISP and STIX/TAXII feeds
-- 📋 **Playbook Automation**: Standardized response procedures
-- 📈 **Metrics Dashboard**: SOC performance analytics
+- 🖥 **Virtual SOC Lab Deployment**: Multi-VM setup simulating attacker, victim, and SIEM systems  
+- 🛡 **Micro-Segmentation Implementation**: Firewall rules to block unauthorized lateral movement  
+- 📡 **SIEM Configuration & Alerting**: Wazuh/ELK/Splunk for log ingestion, detection rules, and alerts  
+- 🚨 **Incident Triage & Reporting**: Investigation of alerts, false positive reduction, and documentation  
 
 **Impact:**
-- Reduced false positive rate by 40%
-- Decreased mean time to detection (MTTD) by 25%
-- Standardized incident response across team
+- 📉 Reduced false positive rate by 40% through tuning Wazuh detection rules and filtering noise from simulated attack logs  
+- ⏱ Decreased mean time to detection (MTTD) by 25% by streamlining alert triage in the SOC lab environment  
+- 📋 Standardized incident response across the project using documented playbooks and consistent reporting procedures  
+
 
 **Virtual SOC Lab Deployment**: Set up and connect multiple virtual machines (Windows, Kali Linux, Ubuntu) to simulate a real-world security environment.
 
@@ -107,7 +108,7 @@ Analyze alerts, identify false positives vs. real threats, and document incident
 <div style="text-align:center; margin-top:3rem; padding:2rem; background:#f8f9fa; border-radius:8px;">
   <h3>Want to Learn More?</h3>
   <p>These projects represent my commitment to practical cybersecurity implementation. Each project includes detailed documentation, security considerations, and lessons learned.</p>
-  <p><a href="/contact/" style="background:#007bff; color:white; padding:0.5rem 1rem; text-decoration:none; border-radius:4px;">Get in Touch</a></p>
+  <p><a href="/contact.md/" style="background:#007bff; color:white; padding:0.5rem 1rem; text-decoration:none; border-radius:4px;">Get in Touch</a></p>
   
   <div style="margin-top:2rem;">
     <img src="{{ '/assets/img/dae-logo.png' | relative_url }}" alt="DAE Logo" style="height:40px; opacity:0.7;">
