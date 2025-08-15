@@ -46,3 +46,44 @@ Currently pursuing my **Cybersecurity degree at DAE** *(Expected Graduation: Oct
 ---
 
 *“Combining creativity and analytical thinking to build, document, and improve effective cybersecurity defenses.”*
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-4NCZMZSGWD"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  // Google Analytics configuration
+  gtag('config', 'G-4NCZMZSGWD');
+
+  // --- Active time tracking ---
+  let timeOnPage = 0;
+  let pageActive = true;
+
+  // Initial state check
+  pageActive = document.visibilityState === "visible" && document.hasFocus();
+
+  // Detect when tab visibility changes
+  document.addEventListener("visibilitychange", () => {
+    pageActive = document.visibilityState === "visible" && document.hasFocus();
+  });
+
+  // Detect when window gains/loses focus
+  window.addEventListener("focus", () => pageActive = true);
+  window.addEventListener("blur", () => pageActive = false);
+
+  // Timer: every 5 seconds, if active, increase counter and send event every 30 sec
+  setInterval(() => {
+    if (pageActive) {
+      timeOnPage += 5;
+
+      if (timeOnPage % 30 === 0) {
+        gtag("event", "time_on_page", {
+          event_category: "Engagement",
+          event_label: "Time in seconds",
+          value: timeOnPage
+        });
+      }
+    }
+  }, 5000);
+</script>
