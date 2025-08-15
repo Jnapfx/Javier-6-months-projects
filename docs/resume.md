@@ -7,8 +7,14 @@ layout: single
 <div style="text-align:center; margin-bottom:2rem; padding:1.5rem; background:#f8f9fa; border-radius:8px;">
   <h1 style="margin:0; color:#2c3e50;">Javier Napoles</h1>
   <p style="margin:0.5rem 0; font-size:1.1rem; color:#34495e;">Cybersecurity Student & Graphic designer</p>
-  <p style="margin:0; color:#7f8c8d;">📧 jnapfx@gmail.com | 🔗 LinkedIn: /JavierNapoles | 🐙 GitHub: /jnapfx</p>
+  
+  <p style="margin:0; font-size:1.1rem;">
+    📧 <a href="mailto:jnapfx@gmail.com" style="color:#0077b5; text-decoration:none;">jnapfx@gmail.com</a> | 
+    🔗 <a href="https://www.linkedin.com/in/javier-napoles-3513031a7" style="color:#0077b5; text-decoration:none;">LinkedIn</a> | 
+    🐙 <a href="https://github.com/Jnapfx" style="color:#0077b5; text-decoration:none;">GitHub</a>
+  </p>
 </div>
+
 
 ## 🎓 Education
 
