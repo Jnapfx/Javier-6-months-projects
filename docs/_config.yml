@@ -4,7 +4,7 @@
 title: "Alex Rivera — Cybersecurity & Backend Developer"
 description: "Portfolio showcasing secure backend systems, automation, and case studies."
 url: "https://jnapfx.github.io" # ← Your actual GitHub username
-baseurl: "/DAE-Demo" # ← Your actual repository name
+baseurl: "/Javier-6-months-projects" # ← Subdirectory path for theme1
 
 # =====================
 # THEME (Modern)
@@ -16,17 +16,17 @@ minimal_mistakes_skin: "default"
 # AUTHOR PROFILE
 # =====================
 author:
-    name: "Javier Napoles"
+    name: "Alex Rivera"
     avatar: "/assets/img/pinky.jpg" # ← Fixed from .heic
     bio: "Cybersecurity & backend developer focused on secure-by-default services."
     email: "alex.rivera@example.com"
     links:
         - label: "GitHub"
           icon: "fab fa-github"
-          url: "https://github.com/Jnapfx"
+          url: "https://github.com/your-username"
         - label: "LinkedIn"
           icon: "fab fa-linkedin"
-          url: "https://www.linkedin.com/in/javier-napoles-3513031a7"
+          url: "https://www.linkedin.com/in/your-profile/"
 
 # =====================
 # NAVIGATION (top menu)
