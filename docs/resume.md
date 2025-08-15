@@ -114,40 +114,57 @@ layout: single
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-4NCZMZSGWD"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
+  function gtag(){ dataLayer.push(arguments); }
   gtag('js', new Date());
-
-  // Google Analytics configuration
   gtag('config', 'G-4NCZMZSGWD');
 
-  // --- Active time tracking ---
-  let timeOnPage = 0;
-  let pageActive = true;
+  // --- Active time tracking (GA4-ready) ---
+  if (!window.__timeOnPageTrackerInitialized) {
+    window.__timeOnPageTrackerInitialized = true;
 
-  // Initial state check
-  pageActive = document.visibilityState === "visible" && document.hasFocus();
+    let seconds = 0;
+    const TICK_MS = 5000;          // count every 5s
+    const SEND_EVERY_SEC = 30;     // send every 30s
+    const IDLE_MS = 60000;         // consider idle after 60s without input
 
-  // Detect when tab visibility changes
-  document.addEventListener("visibilitychange", () => {
-    pageActive = document.visibilityState === "visible" && document.hasFocus();
-  });
+    let pageActive = document.visibilityState === "visible" && document.hasFocus();
+    let lastActivity = Date.now();
 
-  // Detect when window gains/loses focus
-  window.addEventListener("focus", () => pageActive = true);
-  window.addEventListener("blur", () => pageActive = false);
+    const setActive = (state) => {
+      pageActive = state;
+      if (state) lastActivity = Date.now();
+    };
 
-  // Timer: every 5 seconds, if active, increase counter and send event every 30 sec
-  setInterval(() => {
-    if (pageActive) {
-      timeOnPage += 5;
+    document.addEventListener("visibilitychange", () => {
+      setActive(document.visibilityState === "visible" && document.hasFocus());
+    });
+    window.addEventListener("focus",  () => setActive(true));
+    window.addEventListener("blur",   () => setActive(false));
 
-      if (timeOnPage % 30 === 0) {
-        gtag("event", "time_on_page", {
-          event_category: "Engagement",
-          event_label: "Time in seconds",
-          value: timeOnPage
-        });
+    // Update lastActivity on user input
+    ["mousemove","keydown","mousedown","touchstart","scroll"].forEach(ev => {
+      window.addEventListener(ev, () => { lastActivity = Date.now(); }, { passive: true });
+    });
+
+    const sendEvent = () => {
+      gtag("event", "time_on_page", {
+        time_on_page_sec: seconds,       // <-- create a GA4 custom metric for this
+        transport_type: "beacon"
+        // send_to: "G-4NCZMZSGWD"       // uncomment if you have multiple GA properties configured
+      });
+    };
+
+    const intervalId = setInterval(() => {
+      const idle = Date.now() - lastActivity > IDLE_MS;
+      if (pageActive && !idle) {
+        seconds += TICK_MS / 1000;
+        if (seconds % SEND_EVERY_SEC === 0) sendEvent();
       }
-    }
-  }, 5000);
+    }, TICK_MS);
+
+    // Flush on page exit
+    const flush = () => { if (seconds > 0) sendEvent(); };
+    window.addEventListener("pagehide", flush);
+    window.addEventListener("beforeunload", flush);
+  }
 </script>
