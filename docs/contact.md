@@ -62,8 +62,8 @@ layout: single
   </div>
   
   <div style="background:#d1ecf1; padding:1rem; border-radius:6px; text-align:center;">
-    <h4 style="margin:0 0 0.5rem; color:#0c5460;">⚙️ Backend Development</h4>
-    <p style="margin:0; font-size:0.9rem; color:#6c757d;">Secure APIs, authentication, system architecture</p>
+    <h4 style="margin:0 0 0.5rem; color:#0c5460;">🎮 Gamer-Grade Threat Hunting</h4>
+    <p style="margin:0; font-size:0.9rem; color:#6c757d;">Respawn and try again until the threat is gone</p>
   </div>
   
   <div style="background:#d4edda; padding:1rem; border-radius:6px; text-align:center;">
