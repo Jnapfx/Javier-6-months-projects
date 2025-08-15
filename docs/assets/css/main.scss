@@ -1,0 +1,469 @@
+---
+---
+
+@charset "utf-8";
+
+@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'dark' }}";
+@import "minimal-mistakes";
+
+/* Dark Cyberpunk Theme - Custom styles */
+
+:root {
+    --neon-cyan: #00ffff;
+    --neon-pink: #ff0080;
+    --neon-green: #39ff14;
+    --dark-bg: #0a0a0a;
+    --darker-bg: #050505;
+    --card-bg: #1a1a1a;
+    --text-primary: #ffffff;
+    --text-secondary: #b0b0b0;
+    --accent-gradient: linear-gradient(135deg, #00ffff 0%, #ff0080 100%);
+}
+
+/* Global dark theme overrides */
+body {
+    background: var(--dark-bg);
+    color: var(--text-primary);
+    font-family: 'Courier New', monospace;
+}
+
+/* Neon glow effect for images */
+.rounded-image {
+    border-radius: 50%;
+    box-shadow: 0 0 20px var(--neon-cyan), 0 0 40px var(--neon-cyan), 0 0 60px var(--neon-cyan);
+    transition: all 0.3s ease;
+    border: 2px solid var(--neon-cyan);
+}
+
+.rounded-image:hover {
+    transform: scale(1.1) rotate(5deg);
+    box-shadow: 0 0 30px var(--neon-pink), 0 0 60px var(--neon-pink), 0 0 90px var(--neon-pink);
+    border-color: var(--neon-pink);
+}
+
+img.rounded {
+    border-radius: 12px;
+    border: 1px solid var(--neon-cyan);
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.3);
+}
+
+/* Cyberpunk header styling */
+.professional-header {
+    text-align: center;
+    padding: 3rem 0;
+    background: linear-gradient(135deg, #000000 0%, #1a1a1a 50%, #000000 100%);
+    color: var(--text-primary);
+    margin-bottom: 2rem;
+    border-radius: 15px;
+    border: 2px solid var(--neon-cyan);
+    box-shadow: 0 0 30px rgba(0, 255, 255, 0.3);
+    position: relative;
+    overflow: hidden;
+}
+
+.professional-header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: var(--accent-gradient);
+    opacity: 0.1;
+    animation: scan 3s infinite;
+}
+
+@keyframes scan {
+    0% { left: -100%; }
+    100% { left: 100%; }
+}
+
+.site-header {
+    background: var(--darker-bg);
+    color: var(--text-primary);
+    padding: 1rem 0;
+    border-bottom: 2px solid var(--neon-cyan);
+}
+
+.site-title {
+    font-weight: 700;
+    font-size: 1.8rem;
+    margin: 0;
+    color: var(--neon-cyan);
+    text-shadow: 0 0 10px var(--neon-cyan);
+}
+
+/* Cyberpunk footer */
+.footer-note {
+    text-align: center;
+    margin-top: 3rem;
+    padding: 2rem 1rem;
+    background: var(--card-bg);
+    border-top: 3px solid var(--neon-cyan);
+    border-radius: 8px 8px 0 0;
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.2);
+}
+
+.footer-note .dae-logo {
+    height: 40px;
+    opacity: 0.8;
+    margin: 0 0.5rem;
+    vertical-align: middle;
+}
+
+.footer-logo {
+    width: 60px;
+    height: auto;
+    margin: 0 10px;
+    vertical-align: middle;
+}
+
+/* Cyberpunk project cards styling */
+.project-card {
+    background: var(--card-bg);
+    border: 2px solid var(--neon-cyan);
+    border-radius: 15px;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.3);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.project-card::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: var(--accent-gradient);
+    border-radius: 15px;
+    z-index: -1;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 0 40px var(--neon-pink), 0 0 60px rgba(255, 0, 128, 0.3);
+    border-color: var(--neon-pink);
+}
+
+.project-card:hover::before {
+    opacity: 0.3;
+}
+
+.project-card h2 {
+    color: var(--neon-cyan);
+    margin-bottom: 1rem;
+    text-shadow: 0 0 10px var(--neon-cyan);
+}
+
+.project-card .tech-stack {
+    background: rgba(0, 255, 255, 0.1);
+    border: 1px solid var(--neon-green);
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    display: inline-block;
+    margin: 0.25rem;
+    font-size: 0.9rem;
+    color: var(--neon-green);
+    box-shadow: 0 0 10px rgba(57, 255, 20, 0.3);
+}
+
+/* Cyberpunk profile header styling */
+.profile-header {
+    text-align: center;
+    padding: 3rem 0;
+    background: linear-gradient(135deg, var(--darker-bg) 0%, var(--card-bg) 50%, var(--darker-bg) 100%);
+    color: var(--text-primary);
+    margin-bottom: 2rem;
+    border-radius: 15px;
+    border: 2px solid var(--neon-pink);
+    box-shadow: 0 0 30px rgba(255, 0, 128, 0.3);
+    position: relative;
+    overflow: hidden;
+}
+
+.profile-header::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: repeating-linear-gradient(
+        90deg,
+        transparent,
+        transparent 98px,
+        rgba(0, 255, 255, 0.03) 100px
+    );
+    pointer-events: none;
+}
+
+.profile-header img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 4px solid var(--neon-pink);
+    margin-bottom: 1rem;
+    box-shadow: 0 0 30px var(--neon-pink);
+}
+
+/* Cyberpunk skills and certifications */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin: 2rem 0;
+}
+
+.skill-category {
+    background: var(--card-bg);
+    padding: 1.5rem;
+    border-radius: 12px;
+    border: 2px solid var(--neon-green);
+    box-shadow: 0 0 20px rgba(57, 255, 20, 0.2);
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.skill-category:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 30px rgba(57, 255, 20, 0.4);
+    border-color: var(--neon-cyan);
+}
+
+.skill-category h3 {
+    color: var(--neon-green);
+    margin-bottom: 1rem;
+    text-shadow: 0 0 10px var(--neon-green);
+}
+
+.skill-category ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.skill-category li {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid rgba(0, 255, 255, 0.2);
+    color: var(--text-secondary);
+    transition: color 0.3s ease;
+}
+
+.skill-category li:hover {
+    color: var(--neon-cyan);
+    text-shadow: 0 0 5px var(--neon-cyan);
+}
+
+/* Additional cyberpunk elements */
+.masthead {
+    background: var(--darker-bg) !important;
+    border-bottom: 2px solid var(--neon-cyan);
+}
+
+.page__content h1, .page__content h2, .page__content h3 {
+    color: var(--neon-cyan);
+    text-shadow: 0 0 10px var(--neon-cyan);
+}
+
+.page__content p {
+    color: var(--text-secondary);
+}
+
+.page__content a {
+    color: var(--neon-pink);
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.page__content a:hover {
+    color: var(--neon-cyan);
+    text-shadow: 0 0 5px var(--neon-cyan);
+}
+
+/* Navigation styling */
+.greedy-nav {
+    background: var(--darker-bg) !important;
+}
+
+.greedy-nav a {
+    color: var(--text-primary) !important;
+    transition: all 0.3s ease;
+}
+
+.greedy-nav a:hover {
+    color: var(--neon-cyan) !important;
+    text-shadow: 0 0 5px var(--neon-cyan);
+}
+
+.greedy-nav .site-title {
+    color: var(--neon-cyan) !important;
+    text-shadow: 0 0 10px var(--neon-cyan);
+}
+
+.skill-category li:last-child {
+    border-bottom: none;
+}
+
+/* Contact cards */
+.contact-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.contact-card {
+    background: white;
+    border: 1px solid #e9ecef;
+    border-radius: 10px;
+    padding: 2rem;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.contact-card:hover {
+    transform: translateY(-3px);
+}
+
+.contact-card h3 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+}
+
+/* Enhanced navigation */
+.site-nav {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.nav-link {
+    color: #2c3e50;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #007bff;
+}
+
+/* Button styling */
+.btn-primary {
+    background: linear-gradient(135deg, #007bff 0%, #0056b3 100%);
+    border: none;
+    border-radius: 25px;
+    padding: 0.75rem 2rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 123, 255, 0.3);
+}
+
+/* Code snippet styling */
+.highlight {
+    background: #f8f9fa;
+    border: 1px solid #e9ecef;
+    border-radius: 8px;
+    padding: 1rem;
+    margin: 1rem 0;
+}
+
+/* Highlight boxes */
+.highlight-box {
+    background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%);
+    border-left: 4px solid #2196f3;
+    padding: 1rem;
+    margin: 1rem 0;
+    border-radius: 0 8px 8px 0;
+}
+
+.warning-box {
+    background: linear-gradient(135deg, #fff3e0 0%, #ffcc02 100%);
+    border-left: 4px solid #ff9800;
+    padding: 1rem;
+    margin: 1rem 0;
+    border-radius: 0 8px 8px 0;
+}
+
+/* Loading animation */
+.loading {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 3px solid rgba(0, 123, 255, 0.3);
+    border-radius: 50%;
+    border-top-color: #007bff;
+    animation: spin 1s ease-in-out infinite;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+/* Enhanced footer */
+.enhanced-footer {
+    background: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 2rem 0;
+    margin-top: 3rem;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .rounded-image {
+        width: 120px;
+        height: 120px;
+    }
+    
+    .professional-header {
+        padding: 1rem;
+    }
+    
+    .profile-header img {
+        width: 120px;
+        height: 120px;
+    }
+    
+    .contact-cards {
+        grid-template-columns: 1fr;
+    }
+    
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .project-card {
+        padding: 1rem;
+    }
+}
+
+/* Print styles */
+@media print {
+    .site-header,
+    .site-nav,
+    .footer-note {
+        display: none;
+    }
+    
+    .project-card {
+        break-inside: avoid;
+        box-shadow: none;
+        border: 1px solid #ccc;
+    }
+    
+    .professional-header {
+        background: none;
+        color: black;
+        border: 1px solid #ccc;
+    }
+}
