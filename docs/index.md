@@ -19,7 +19,6 @@ permalink: /
 I'm passionate about building **secure, reliable systems** that help organizations defend against modern threats. My work focuses on:
 
 - 🛡️ **Security Operations**: SOC analysis, incident response, threat hunting
-- 🔧 **Backend Development**: Secure API design, authentication systems
 - 📊 **Automation**: Security tooling, detection engineering
 - 📚 **Documentation**: Playbooks, procedures, knowledge sharing
 
