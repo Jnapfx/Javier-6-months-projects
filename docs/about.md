@@ -5,7 +5,7 @@ layout: single
 ---
 
 <div style="text-align:center; margin-bottom:2rem;">
-  <img src="{{ '/assets/img/pinky.jpg' | relative_url }}" alt="Alex Rivera" 
+  <img src="{{ '/assets/img/pinky.jpg' | relative_url }}" alt="Javier Napoles" 
        style="max-width:200px; border-radius:50%; box-shadow:0 4px 12px rgba(0,0,0,.15);">
 </div>
 
@@ -47,13 +47,11 @@ Designing secure authentication and authorization systems for modern web applica
 
 **District Arts & Education (DAE)**  
 *Cybersecurity & Backend Development Program*  
-*Expected Graduation: May 2025*
+*Expected Graduation: Oct 2025*
 
 **Relevant Coursework:**
-- Network Security & Penetration Testing
-- Secure Software Development
-- Digital Forensics & Incident Response
-- Cloud Security Architecture
+- Google Cybersecurity Certificate 
+
 
 ---
 

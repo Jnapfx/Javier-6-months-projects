@@ -1,8 +1,8 @@
 # =====================
 # SITE BASICS
 # =====================
-title: "Alex Rivera — Cybersecurity & Backend Developer"
-description: "Portfolio showcasing secure backend systems, automation, and case studies."
+title: "Javier Napoles — SOC Analyst & Graphic Designer"
+description: "Portfolio showcasing SOC Labs projects, and case studies."
 url: "https://jnapfx.github.io" # ← Your actual GitHub username
 baseurl: "/Javier-6-months-projects" # ← Subdirectory path for theme1
 
@@ -16,17 +16,17 @@ minimal_mistakes_skin: "default"
 # AUTHOR PROFILE
 # =====================
 author:
-    name: "Alex Rivera"
+    name: "Javier Napoles"
     avatar: "/assets/img/pinky.jpg" # ← Fixed from .heic
-    bio: "Cybersecurity & backend developer focused on secure-by-default services."
-    email: "alex.rivera@example.com"
+    bio: "Graphic designer turning into SOC Analyst."
+    email: "jnapfx@gmail.com"
     links:
         - label: "GitHub"
           icon: "fab fa-github"
-          url: "https://github.com/your-username"
+          url: "https://github.com/Jnapfx"
         - label: "LinkedIn"
           icon: "fab fa-linkedin"
-          url: "https://www.linkedin.com/in/your-profile/"
+          url: "https://www.linkedin.com/in/javier-napoles-3513031a7/"
 
 # =====================
 # NAVIGATION (top menu)
