@@ -23,7 +23,7 @@ layout: single
   
   <div style="background:#f8f9fa; padding:1.5rem; border-radius:8px; border-left:4px solid #0077b5;">
     <h3 style="margin:0 0 0.5rem; color:#2c3e50;">💼 LinkedIn</h3>
-    <p style="margin:0; font-size:1.1rem;"><a href="https://www.linkedin.com/in/javier-napoles-3513031a7" style="color:#0077b5; text-decoration:none;">linkedin.com/Javier_Napoles</a></p>
+    <p style="margin:0; font-size:1.1rem;"><a href="https://www.linkedin.com/in/javier-napoles-3513031a7" style="color:#0077b5; text-decoration:none;">linkedin.com/JavierNapoles</a></p>
     <p style="margin:0.5rem 0 0; color:#6c757d; font-size:0.9rem;">Connect for networking and professional updates</p>
   </div>
   
