@@ -15,7 +15,7 @@ layout: single
 **District Arts & Education (DAE)**  
 *Cybersecurity Program*  
 *Expected Graduation: Oct 2025*  
-*GPA: 3.8/4.0*
+
 
 **Relevant Coursework:**
 - Google Cybersecurity Certificate

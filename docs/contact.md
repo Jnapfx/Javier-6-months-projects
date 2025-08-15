@@ -8,7 +8,7 @@ layout: single
   <img src="{{ '/assets/img/javier_headshot.jpeg' | relative_url }}" alt="Alex Rivera" 
        style="max-width:150px; border-radius:50%; box-shadow:0 4px 12px rgba(0,0,0,.15);">
   <h2 style="margin:1rem 0 0.5rem; color:#2c3e50;">Let's Connect</h2>
-  <p style="color:#7f8c8d; font-size:1.1rem;">I'm always interested in discussing cybersecurity, backend development, and new opportunities.</p>
+  <p style="color:#7f8c8d; font-size:1.1rem;">I'm always interested in discussing cybersecurity and new opportunities.</p>
 </div>
 
 ## 📬 Get in Touch
@@ -23,7 +23,7 @@ layout: single
   
   <div style="background:#f8f9fa; padding:1.5rem; border-radius:8px; border-left:4px solid #0077b5;">
     <h3 style="margin:0 0 0.5rem; color:#2c3e50;">💼 LinkedIn</h3>
-    <p style="margin:0; font-size:1.1rem;"><a href="https://www.linkedin.com/in/javier-napoles-3513031a7" style="color:#0077b5; text-decoration:none;">linkedin.com/in/alexrivera</a></p>
+    <p style="margin:0; font-size:1.1rem;"><a href="https://www.linkedin.com/in/javier-napoles-3513031a7" style="color:#0077b5; text-decoration:none;">linkedin.com/Javier_Napoles</a></p>
     <p style="margin:0.5rem 0 0; color:#6c757d; font-size:0.9rem;">Connect for networking and professional updates</p>
   </div>
   
@@ -40,8 +40,8 @@ layout: single
 ## 🎯 What I'm Looking For
 
 <div style="background:#e8f4fd; padding:2rem; border-radius:8px; margin:2rem 0;">
-  <h3 style="margin:0 0 1rem; color:#2c3e50;">Security Engineering Opportunities</h3>
-  <p style="margin:0 0 1rem; line-height:1.6;">I'm actively seeking <strong>Security Engineer</strong> or <strong>SOC Analyst</strong> roles where I can:</p>
+  <h3 style="margin:0 0 1rem; color:#2c3e50;">SOC Analyst Opportunities</h3>
+  <p style="margin:0 0 1rem; line-height:1.6;">I'm actively seeking <strong>SOC Analyst</strong> or <strong>Cybersecurity Analyst</strong> roles where I can:</p>
   
   <ul style="margin:0; padding-left:1.5rem; line-height:1.8;">
     <li>🛡️ Build and maintain security monitoring systems</li>
