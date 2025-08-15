@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "Javier Napoles"
+title: ""
 permalink: /
 ---
 
