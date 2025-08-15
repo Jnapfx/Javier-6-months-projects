@@ -1,7 +1,7 @@
 # =====================
 # SITE BASICS
 # =====================
-title: "Javier Napoles — SOC Analyst & Graphic Designer"
+title: "Javier Napoles — Cybersecurity & Graphic Designer"
 description: "Portfolio showcasing SOC Labs projects, and case studies."
 url: "https://jnapfx.github.io" # ← Your actual GitHub username
 baseurl: "/Javier-6-months-projects" # ← Subdirectory path for theme1
@@ -18,7 +18,7 @@ minimal_mistakes_skin: "default"
 author:
     name: "Javier Napoles"
     avatar: "/assets/img/javier_headshot.jpeg" # ← Fixed from .heic
-    bio: "Graphic designer evolving into a SOC Analyst."
+    bio: "Graphic Designer Evolving into Cybersecurity Professional"
     email: "jnapfx@gmail.com"
     links:
         - label: "GitHub"
