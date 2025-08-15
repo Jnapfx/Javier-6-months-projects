@@ -31,9 +31,11 @@ As I approach graduation in **Oct 2025**, I'm seeking opportunities in **SOC Ana
 
 <div style="text-align:left; margin-top:2rem;">
   <a href="https://www.mydae.org/" target="_blank" rel="noopener">
-    <img src="{{ '/assets/img/dae-logo.png' | relative_url }}" alt="DAE Logo" style="height:40px; opacity:0.8;">
+    <img src="{{ '/assets/img/dae-logo.png' | relative_url }}" alt="DAE Logo" 
+         style="height:40px; opacity:0.8; box-shadow:none;">
   </a>
 </div>
+
 
 
 
