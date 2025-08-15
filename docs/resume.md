@@ -112,7 +112,7 @@ layout: single
 <div style="text-align:center; margin-top:2rem; padding:1rem; background:#e8f4fd; border-radius:8px;">
   <p style="margin:0; font-style:italic; color:#2c3e50;">"Combining creativity and analytical thinking to build, document, and improve effective cybersecurity defenses."</p>
   
-  <div style="text-align:left; margin-top:2rem;">
+  <div style="text-align:center; margin-top:2rem;">
   <a href="https://www.mydae.org/" target="_blank" rel="noopener">
     <img src="{{ '/assets/img/dae-logo.png' | relative_url }}" alt="DAE Logo" 
          style="height:40px; opacity:0.8; box-shadow:none;">

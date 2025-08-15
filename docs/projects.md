@@ -93,7 +93,7 @@ This project simulates the core responsibilities of a **SOC Analyst** by buildin
   <p>These projects represent my commitment to practical cybersecurity implementation. Each project includes detailed documentation, security considerations, and lessons learned.</p>
   <p><a href="https://jnapfx.github.io/Javier-6-months-projects/contact/" style="background:#007bff; color:white; padding:0.5rem 1rem; text-decoration:none; border-radius:4px;">Get in Touch</a></p>
   
-  <div style="text-align:left; margin-top:2rem;">
+  <div style="text-align:center; margin-top:2rem;">
   <a href="https://www.mydae.org/" target="_blank" rel="noopener">
     <img src="{{ '/assets/img/dae-logo.png' | relative_url }}" alt="DAE Logo" 
          style="height:40px; opacity:0.8; box-shadow:none;">
