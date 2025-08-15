@@ -18,7 +18,7 @@ layout: single
 
 **Faculty of Arquitecture and Design (FAD)**
 *Graphic Design*
-*2010-2015*
+*(2010-2015)*
 
 
 **Relevant Coursework:**

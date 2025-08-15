@@ -5,7 +5,7 @@ layout: single
 ---
 
 <div style="text-align:center; margin-bottom:3rem;">
-  <img src="{{ '/assets/img/javier_headshot.jpeg' | relative_url }}" alt="Alex Rivera" 
+  <img src="{{ '/assets/img/javier_headshot.jpeg' | relative_url }}" alt="Javier Napoles" 
        style="max-width:150px; border-radius:50%; box-shadow:0 4px 12px rgba(0,0,0,.15);">
   <h2 style="margin:1rem 0 0.5rem; color:#2c3e50;">Let's Connect</h2>
   <p style="color:#7f8c8d; font-size:1.1rem;">I'm always interested in discussing cybersecurity and new opportunities.</p>

@@ -62,12 +62,6 @@ dog
 (Runs in Python — copy the code or clone the repo to test it locally.)
 
 
-## Screenshots
-<p align="center">
-  <img src="https://github.com/Jnapfx/Javier-6-months-projects/blob/main/docs/assets/images/python_app/screen_1.png?raw=true" alt="Screen 1" width="250"/>
-  <img src="https://raw.githubusercontent.com/Jnapfx/Javier-6-months-projects/refs/heads/main/docs/assets/images/python_app/screen_2.png" alt="Screen 2" width="250"/>
-  <img src="https://raw.githubusercontent.com/Jnapfx/Javier-6-months-projects/refs/heads/main/docs/assets/images/python_app/screen_3.png" alt="Screen 3" width="250"/>
-</p>
 
 ---
 
