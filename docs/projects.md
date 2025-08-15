@@ -92,17 +92,6 @@ This project simulates the core responsibilities of a **SOC Analyst** by buildin
 - 📋 Standardized incident response across the project using documented playbooks and consistent reporting procedures  
 
 
-**Virtual SOC Lab Deployment**: Set up and connect multiple virtual machines (Windows, Kali Linux, Ubuntu) to simulate a real-world security environment.
-
-**Attack Simulation & Detection**
-Perform simulated attacks (e.g., port scans, brute-force logins) and detect them using SIEM and log analysis tools.
-**Micro-Segmentation Implementation**
-Apply firewall rules to control traffic between systems and enforce least-privilege access.
-**SIEM Configuration & Alerting**:
-Install and configure a SIEM platform to ingest logs, create detection rules, and generate alerts for suspicious activity.
-**Incident Triage & Reporting**
-Analyze alerts, identify false positives vs. real threats, and document incident response actions and findings.
-
 ---
 
 <div style="text-align:center; margin-top:3rem; padding:2rem; background:#f8f9fa; border-radius:8px;">
