@@ -71,14 +71,14 @@ dog
 
 ---
 
-## 🚨 SOC Automation Toolkit
+## 🚨 Divide & Defend: A Hands-On SOC Lab Project with Micro-Segmentation 
 
 <div style="background:#f8f9fa; padding:1.5rem; border-radius:8px; margin:1rem 0; border-left:4px solid #28a745;">
-  <p><strong>Tech Stack:</strong> Python, Splunk API, MISP, Docker</p>
-  <p><strong>Duration:</strong> 2 months | <strong>Status:</strong> In Development</p>
+  <p><strong>Tech Stack:</strong> Python, Wazuh, MISP, Docker</p>
+  <p><strong>Duration:</strong> 3 months | <strong>Status:</strong> In Development</p>
 </div>
 
-Developing an automated toolkit for **Security Operations Center (SOC)** analysts to streamline incident response and threat intelligence workflows.
+This project simulates the core responsibilities of a **SOC Analyst** by building a functional lab environment using virtual machines and open-source tools. It emphasizes practical skills in threat detection, alert triage, and incident response. A key focus is the use of **micro-segmentation** as a proactive defense strategy to enhance network security.
 
 **Key Components:**
 - 📊 **Automated Alert Triage**: ML-based alert prioritization
@@ -90,6 +90,17 @@ Developing an automated toolkit for **Security Operations Center (SOC)** analyst
 - Reduced false positive rate by 40%
 - Decreased mean time to detection (MTTD) by 25%
 - Standardized incident response across team
+
+**Virtual SOC Lab Deployment**: Set up and connect multiple virtual machines (Windows, Kali Linux, Ubuntu) to simulate a real-world security environment.
+
+**Attack Simulation & Detection**
+Perform simulated attacks (e.g., port scans, brute-force logins) and detect them using SIEM and log analysis tools.
+**Micro-Segmentation Implementation**
+Apply firewall rules to control traffic between systems and enforce least-privilege access.
+**SIEM Configuration & Alerting**:
+Install and configure a SIEM platform to ingest logs, create detection rules, and generate alerts for suspicious activity.
+**Incident Triage & Reporting**
+Analyze alerts, identify false positives vs. real threats, and document incident response actions and findings.
 
 ---
 

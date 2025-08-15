@@ -16,7 +16,7 @@ layout: single
 *Cybersecurity Program*  
 *Expected Graduation: Oct 2025*  
 
-**Faculty of Arquitecure and Design (FAD)**
+**Faculty of Arquitecture and Design (FAD)**
 *Graphic Design*
 *2010-2015*
 
