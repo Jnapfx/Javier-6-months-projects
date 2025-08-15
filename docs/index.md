@@ -10,9 +10,10 @@ permalink: /
   <div>
     <h1 style="margin:0; color:#2c3e50;">Javier Napoles</h1>
     <p style="margin:.5rem 0; font-size:1.1rem; color:#34495e;">Cybersecurity Student · Graduating Oct 2025</p>
-    <p style="margin:.5rem 0; line-height:1.6;">Focused on SOC analysis and blue-team operations. I build labs, tune detections, and document repeatable security playbooks for enterprise environments.</p>
+    <p style="margin:.5rem 0; line-height:1.6;">Focused on SOC analysis and blue-team operations — I build labs, tune detections, and write playbooks so threats get confused, frustrated, and eventually give up.</p>
   </div>
 </div>
+
 
 ## Welcome to My Portfolio
 
