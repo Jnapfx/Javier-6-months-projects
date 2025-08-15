@@ -7,7 +7,7 @@ layout: single
 <div style="text-align:center; margin-bottom:2rem; padding:1.5rem; background:#f8f9fa; border-radius:8px;">
   <h1 style="margin:0; color:#2c3e50;">Javier Napoles</h1>
   <p style="margin:0.5rem 0; font-size:1.1rem; color:#34495e;">Cybersecurity Student & Graphic designer</p>
-  <p style="margin:0; color:#7f8c8d;">📧 jnapfx@gmail.com | 🔗 LinkedIn: /in/javiernapoles | 🐙 GitHub: /javiernapoles</p>
+  <p style="margin:0; color:#7f8c8d;">📧 jnapfx@gmail.com | 🔗 LinkedIn: /JavierNapoles | 🐙 GitHub: /jnapfx</p>
 </div>
 
 ## 🎓 Education
@@ -15,6 +15,10 @@ layout: single
 **District Arts & Education (DAE)**  
 *Cybersecurity Program*  
 *Expected Graduation: Oct 2025*  
+
+**Faculty of Arquitecure and Design (FAD)**
+*Graphic Design*
+*2010-2015*
 
 
 **Relevant Coursework:**
