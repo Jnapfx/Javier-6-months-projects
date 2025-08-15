@@ -9,7 +9,7 @@ permalink: /
        style="max-width:160px; border-radius:30%; box-shadow:0 4px 12px rgba(0,0,0,.15);">
   <div>
     <h1 style="margin:0; color:#2c3e50;">Javier Napoles</h1>
-    <p style="margin:.5rem 0; font-size:1.1rem; color:#34495e;">Cybersecurity Student · Graduating May 2025</p>
+    <p style="margin:.5rem 0; font-size:1.1rem; color:#34495e;">Cybersecurity Student · Graduating Oct 2025</p>
     <p style="margin:.5rem 0; line-height:1.6;">Focused on SOC analysis and blue-team operations. I build labs, tune detections, and document repeatable security playbooks for enterprise environments.</p>
   </div>
 </div>
