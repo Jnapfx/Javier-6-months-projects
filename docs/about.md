@@ -36,7 +36,8 @@ Currently pursuing my **Cybersecurity degree at DAE** *(Expected Graduation: Oct
 - SIEM Platforms *(Wazuh, Splunk)*  
 - Vulnerability Scanners *(Nessus, OpenVAS)*  
 - Network Analysis Tools *(Wireshark, tcpdump)* 
-- AI & Prompt Engineering: *Designing prompts for security automation and analysis* 
+- AI & Prompt Engineering: *(Designing prompts for security automation and analysis)* 
+
 ---
 
 💼 **Looking for:** SOC Analyst role in a collaborative, growth-oriented team. 

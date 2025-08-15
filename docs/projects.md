@@ -104,30 +104,6 @@ Analyze alerts, identify false positives vs. real threats, and document incident
 
 ---
 
-## 🔍 API Security Scanner
-
-<div style="background:#f8f9fa; padding:1.5rem; border-radius:8px; margin:1rem 0; border-left:4px solid #dc3545;">
-  <p><strong>Tech Stack:</strong> Go, REST APIs, JSON, Docker</p>
-  <p><strong>Duration:</strong> 6 weeks | <strong>Status:</strong> Completed</p>
-</div>
-
-Created a specialized security scanner for **REST API endpoints** that identifies common vulnerabilities and misconfigurations in web applications.
-
-**Scanning Capabilities:**
-- 🔐 **Authentication Bypass**: Testing for auth vulnerabilities
-- 💉 **Injection Attacks**: SQL, NoSQL, and command injection detection
-- 🔓 **Authorization Flaws**: IDOR and privilege escalation checks
-- 📝 **Input Validation**: Boundary testing and fuzzing
-- 🛡️ **Security Headers**: Missing security controls identification
-
-**Features:**
-- Comprehensive reporting with remediation guidance
-- Integration with CI/CD pipelines
-- Custom rule engine for organization-specific checks
-- Export results in multiple formats (JSON, PDF, HTML)
-
----
-
 <div style="text-align:center; margin-top:3rem; padding:2rem; background:#f8f9fa; border-radius:8px;">
   <h3>Want to Learn More?</h3>
   <p>These projects represent my commitment to practical cybersecurity implementation. Each project includes detailed documentation, security considerations, and lessons learned.</p>
