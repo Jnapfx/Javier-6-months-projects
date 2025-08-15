@@ -18,7 +18,7 @@ minimal_mistakes_skin: "default"
 author:
     name: "Javier Napoles"
     avatar: "/assets/img/javier_headshot.jpeg" # ← Fixed from .heic
-    bio: "Graphic designer turning into SOC Analyst."
+    bio: "Graphic designer evolving into a SOC Analyst."
     email: "jnapfx@gmail.com"
     links:
         - label: "GitHub"
