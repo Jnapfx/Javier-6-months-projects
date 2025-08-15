@@ -81,10 +81,13 @@ layout: single
   
   <a href="mailto:jnapfx@gmail.com" style="background:#007bff; color:white; padding:0.75rem 1.5rem; text-decoration:none; border-radius:6px; font-weight:bold; display:inline-block;">Send me an email</a>
   
-  <div style="margin-top:2rem;">
-    <img src="{{ '/assets/img/dae-logo.png' | relative_url }}" alt="DAE Logo" style="height:35px; opacity:0.7;">
-  </div>
+<div style="text-align:left; margin-top:2rem;">
+  <a href="https://www.mydae.org/" target="_blank" rel="noopener">
+    <img src="{{ '/assets/img/dae-logo.png' | relative_url }}" alt="DAE Logo" 
+         style="height:40px; opacity:0.8; box-shadow:none;">
+  </a>
 </div>
+
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-4NCZMZSGWD"></script>
 <script>

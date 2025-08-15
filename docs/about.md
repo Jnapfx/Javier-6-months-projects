@@ -47,9 +47,13 @@ Currently pursuing my **Cybersecurity degree at DAE** *(Expected Graduation: Oct
 
 *“Combining creativity and analytical thinking to build, document, and improve effective cybersecurity defenses.”*
 
-<div style="text-align:center; margin-top:2rem;">
-  <img src="{{ '/assets/img/dae-logo.png' | relative_url }}" alt="DAE Logo" style="height:40px; opacity:0.8;">
+<div style="text-align:left; margin-top:2rem;">
+  <a href="https://www.mydae.org/" target="_blank" rel="noopener">
+    <img src="{{ '/assets/img/dae-logo.png' | relative_url }}" alt="DAE Logo" 
+         style="height:40px; opacity:0.8; box-shadow:none;">
+  </a>
 </div>
+
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-4NCZMZSGWD"></script>
 <script>
