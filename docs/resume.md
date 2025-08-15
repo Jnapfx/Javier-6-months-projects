@@ -5,24 +5,21 @@ layout: single
 ---
 
 <div style="text-align:center; margin-bottom:2rem; padding:1.5rem; background:#f8f9fa; border-radius:8px;">
-  <h1 style="margin:0; color:#2c3e50;">Alex Rivera</h1>
-  <p style="margin:0.5rem 0; font-size:1.1rem; color:#34495e;">Cybersecurity Student & Backend Developer</p>
-  <p style="margin:0; color:#7f8c8d;">📧 alex.rivera@email.com | 🔗 LinkedIn: /in/alexrivera | 🐙 GitHub: /alexrivera</p>
+  <h1 style="margin:0; color:#2c3e50;">Javier Napoles</h1>
+  <p style="margin:0.5rem 0; font-size:1.1rem; color:#34495e;">Cybersecurity Student & Graphic designer</p>
+  <p style="margin:0; color:#7f8c8d;">📧 jnapfx@gmail.com | 🔗 LinkedIn: /in/javiernapoles | 🐙 GitHub: /javiernapoles</p>
 </div>
 
 ## 🎓 Education
 
 **District Arts & Education (DAE)**  
-*Cybersecurity & Backend Development Program*  
-*Expected Graduation: May 2025*  
+*Cybersecurity Program*  
+*Expected Graduation: Oct 2025*  
 *GPA: 3.8/4.0*
 
 **Relevant Coursework:**
-- Network Security & Penetration Testing
-- Secure Software Development Lifecycle
-- Digital Forensics & Incident Response
-- Cloud Security Architecture
-- Cryptography & Applied Mathematics
+- Google Cybersecurity Certificate
+
 
 ---
 
@@ -114,6 +111,6 @@ layout: single
   <p style="margin:0; font-style:italic; color:#2c3e50;">"Passionate about building secure systems that protect organizations while enabling innovation."</p>
   
   <div style="margin-top:1rem;">
-    <img src="{{ '/assets/img/dae-logo.jpg' | relative_url }}" alt="DAE Logo" style="height:30px; opacity:0.7;">
+    <img src="{{ '/assets/img/dae-logo.png' | relative_url }}" alt="DAE Logo" style="height:30px; opacity:0.7;">
   </div>
 </div>

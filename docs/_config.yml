@@ -17,7 +17,7 @@ minimal_mistakes_skin: "default"
 # =====================
 author:
     name: "Javier Napoles"
-    avatar: "/assets/img/pinky.jpg" # ← Fixed from .heic
+    avatar: "/assets/img/javier_headshot.jpeg" # ← Fixed from .heic
     bio: "Graphic designer turning into SOC Analyst."
     email: "jnapfx@gmail.com"
     links:
@@ -36,7 +36,7 @@ author:
 # =====================
 # BRANDING
 # =====================
-logo: "/assets/img/dae-logo.jpg" # ← Fixed from .avif
+logo: "/assets/img/dae-logo.png" # ← Fixed from .avif
 
 # =====================
 # PLUGINS (safe + GitHub Pages supported)

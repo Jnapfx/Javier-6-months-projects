@@ -5,7 +5,7 @@ layout: single
 ---
 
 <div style="text-align:center; margin-bottom:2rem;">
-  <img src="{{ '/assets/img/pinky.jpg' | relative_url }}" alt="Javier Napoles" 
+  <img src="{{ '/assets/img/javier_headshot.jpeg' | relative_url }}" alt="Javier Napoles" 
        style="max-width:200px; border-radius:50%; box-shadow:0 4px 12px rgba(0,0,0,.15);">
 </div>
 
