@@ -18,83 +18,76 @@ layout: single
 
 
 **Relevant Coursework:**
-- Google Cybersecurity Certificate
+*Google Cybersecurity Certificate (2024)*
 
 
 ---
 
 ## 💼 Experience
 
-**Security Analyst Intern** | *TechSecure Solutions* | *Jun 2024 - Present*
-- Monitored security events using SIEM platforms (Splunk, QRadar)
-- Investigated and responded to 50+ security incidents per week
-- Developed automated threat detection rules, reducing false positives by 30%
-- Created incident response playbooks for common attack scenarios
+## 🧪 Technical Projects
 
-**Backend Developer** | *StartupLab* | *Jan 2024 - May 2024*
-- Built secure REST APIs using Python/Flask and Go
-- Implemented OAuth 2.0 authentication and JWT token management
-- Designed database schemas with security best practices
-- Conducted code reviews focusing on security vulnerabilities
+### Divide & Defend: A Hands-On SOC Lab Project with Micro-Segmentation  
+**2025 – Capstone Lab Project**  
+- Built a home-based SOC lab with VMs simulating attacker, victim, and SIEM nodes.  
+- Simulated attacks using Nmap and Hydra; configured detection rules in Wazuh.  
+- Implemented micro-segmentation with UFW, iptables, and Windows Firewall.  
+- Parsed logs from Windows and Linux agents to identify brute-force attacks, new user creation, and unauthorized access.  
+- Conducted incident triage, threat hunting (OTX, MISP, AbuseIPDB), and vulnerability scans with Nmap/OpenVAS.  
+- Produced a professional final report with IOC analysis, detection maps, and remediation plans.  
+
+---
+
+## 💼 Professional Experience
+
+### Photographer & Graphic Designer  
+**SSNUS – Norwalk, CT | 2020 – Present**  
+- Maintained organized digital asset management with secure FTP workflows.  
+- Launched SEO-optimized product site with structured metadata.  
+- Applied disciplined file versioning and naming conventions to large digital libraries.  
+
+### Freelance Graphic Designer & Video Editor  
+**Fiverr | 2016 – Present**  
+- Delivered cross-platform design assets for branding, UI/UX, and marketing campaigns.  
+- Edited videos and animations for campaigns while maintaining consistency and quality.  
+- Maintained communication and secure file delivery through cloud collaboration tools.  
+
+### Post-Production Editor  
+**Aventura TV – Venezuela | 2015 – 2017**  
+- Edited TV and digital content end-to-end, including color grading and sound syncing.  
+- Coordinated with producers to align deliverables with campaign goals.  
+- Ensured quality control and technical accuracy in all final releases.  
+
 
 ---
 
 ## 🛠️ Technical Skills
 
 ### Programming Languages
-- **Python** - Security automation, data analysis, Flask/Django
-- **Go** - Backend services, CLI tools, concurrent programming
+- **Python** - Security automation, data analysis
 - **TypeScript/JavaScript** - Frontend security implementations
 - **SQL** - Database design, query optimization, injection prevention
 
 ### Security Tools & Platforms
-- **SIEM**: Splunk, ELK Stack, QRadar
+- **SIEM**: Splunk, Wazuh
 - **Vulnerability Assessment**: Nessus, OpenVAS, Burp Suite
 - **Network Security**: Wireshark, Nmap, pfSense
 - **Incident Response**: MISP, TheHive, Volatility
 
-### Cloud & Infrastructure
-- **AWS**: IAM, CloudTrail, GuardDuty, Security Hub
-- **Azure**: Security Center, Sentinel, Key Vault
-- **Containerization**: Docker, Kubernetes security
-- **Infrastructure as Code**: Terraform, Ansible
-
 ### Development & DevSecOps
 - **Version Control**: Git, GitHub Actions, GitLab CI/CD
-- **Security Testing**: SAST, DAST, dependency scanning
-- **Monitoring**: Prometheus, Grafana, ELK Stack
 
 ---
 
 ## 🏆 Certifications & Training
 
 **In Progress:**
-- CompTIA Security+ (Scheduled: March 2025)
-- AWS Certified Security - Specialty (Scheduled: June 2025)
+- CompTIA Security+ (Scheduled: November 2025)
+- AWS Certified Security - Specialty (Scheduled: September 2025)
 
 **Completed:**
-- SANS SEC401: Security Essentials Bootcamp (2024)
-- Certified Ethical Hacker (CEH) - EC-Council (2024)
-- Python for Cybersecurity - Coursera (2023)
+- Google Cybersecurity Course (2024)
 
----
-
-## 🚀 Key Projects
-
-**Secure File Storage System** | *Python, Flask, AES-256*
-- Implemented end-to-end encryption with zero-knowledge architecture
-- Built role-based access control system with audit logging
-- Achieved 99.9% uptime with comprehensive security monitoring
-
-**SOC Automation Toolkit** | *Python, Splunk API, Docker*
-- Reduced alert triage time by 60% through ML-based prioritization
-- Integrated threat intelligence feeds (MISP, STIX/TAXII)
-- Automated incident response workflows for common scenarios
-
-**API Security Scanner** | *Go, REST APIs*
-- Developed custom vulnerability scanner for web applications
-- Identified OWASP Top 10 vulnerabilities with 95% accuracy
-- Integrated with CI/CD pipelines for continuous security testing
 
 ---
 
@@ -103,12 +96,11 @@ layout: single
 - **Security Operations**: SOC analysis, threat hunting, incident response
 - **Application Security**: Secure coding, vulnerability assessment
 - **Cloud Security**: Infrastructure protection, compliance automation
-- **DevSecOps**: Security integration in development workflows
 
 ---
 
 <div style="text-align:center; margin-top:2rem; padding:1rem; background:#e8f4fd; border-radius:8px;">
-  <p style="margin:0; font-style:italic; color:#2c3e50;">"Passionate about building secure systems that protect organizations while enabling innovation."</p>
+  <p style="margin:0; font-style:italic; color:#2c3e50;">"Combining creativity and analytical thinking to build, document, and improve effective cybersecurity defenses."</p>
   
   <div style="margin-top:1rem;">
     <img src="{{ '/assets/img/dae-logo.png' | relative_url }}" alt="DAE Logo" style="height:30px; opacity:0.7;">

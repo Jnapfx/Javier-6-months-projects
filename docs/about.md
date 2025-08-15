@@ -43,4 +43,4 @@ Currently pursuing my **Cybersecurity degree at DAE** *(Expected Graduation: Oct
 
 ---
 
-*"Security is not a product, but a process. It's about building systems that fail securely and recover gracefully."*
+*“Combining creativity and analytical thinking to build, document, and improve effective cybersecurity defenses.”*
