@@ -2,8 +2,6 @@
 document.addEventListener('DOMContentLoaded', function () {
   const nav = document.querySelector('.site-header .greedy-nav, .masthead .greedy-nav');
   if (!nav) return;
-
-  // Use existing Minimal Mistakes toggle if present; otherwise create one
   let btn = nav.querySelector('.greedy-nav__toggle');
   if (!btn) {
     btn = document.createElement('button');
@@ -14,18 +12,9 @@ document.addEventListener('DOMContentLoaded', function () {
   } else {
     btn.classList.remove('hidden');
   }
-
-  btn.setAttribute('aria-expanded', 'false');
-  btn.addEventListener('click', function () {
-    const open = nav.classList.toggle('is-open');
-    btn.setAttribute('aria-expanded', open ? 'true' : 'false');
-  });
-
-  // Close menu when a link is clicked
-  nav.querySelectorAll('.visible-links a').forEach(function (a) {
-    a.addEventListener('click', function () {
-      nav.classList.remove('is-open');
-      btn.setAttribute('aria-expanded', 'false');
-    });
-  });
+  function closeMenu(){ nav.classList.remove('is-open'); btn.setAttribute('aria-expanded','false'); }
+  btn.setAttribute('aria-expanded','false');
+  btn.addEventListener('click', function(){ const open = nav.classList.toggle('is-open'); btn.setAttribute('aria-expanded', open ? 'true':'false'); });
+  nav.querySelectorAll('.visible-links a').forEach(a => a.addEventListener('click', closeMenu));
+  document.addEventListener('click', e => { if (!nav.contains(e.target)) closeMenu(); });
 });

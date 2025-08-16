@@ -312,39 +312,30 @@ img.rounded {
     }
 }
 
-/* ===== v6: Fixed header, working hamburger, and hide big H1 on mobile ===== */
 
-/* Make the site header fixed across the site (more reliable than sticky on iOS) */
+/* ===== v7 fixes ===== */
 .site-header, .masthead {
   position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
+  top: 0; left: 0; right: 0;
   z-index: 10000;
   background: rgba(255,255,255,0.96);
   backdrop-filter: saturate(120%) blur(6px);
   border-bottom: 1px solid #eaeaea;
 }
-
-/* Push content down so it's not covered by the fixed header */
-body { padding-top: 68px; }
-html  { scroll-padding-top: 76px; } /* for #anchor links and ToC jumps */
-
-/* Remove large page title on mobile to avoid duplication with hero name */
+:root { --header-h-desktop: 76px; --header-h-mobile: 64px; }
+body { padding-top: var(--header-h-desktop); }
+html { scroll-padding-top: calc(var(--header-h-desktop) + 8px); }
 @media (max-width: 900px) {
+  body { padding-top: var(--header-h-mobile); }
+  html { scroll-padding-top: calc(var(--header-h-mobile) + 8px); }
   .page__title { display: none; }
 }
-
-/* Keep only the logo in the header (hide textual title) */
 .site-header .site-title, .masthead .site-title { display: none !important; }
 .site-logo img { height: 28px; }
-
-/* Center the nav on desktop */
 .greedy-nav { display: flex; align-items: center; justify-content: center; }
 .greedy-nav .visible-links { display: flex; justify-content: center; margin: 0 auto; gap: .5rem; }
 .greedy-nav .visible-links > li > a { padding: .8rem .9rem; font-weight: 600; }
-
-/* Mobile hamburger behavior */
+.greedy-nav .greedy-nav__toggle { display: none !important; }
 @media (max-width: 900px) {
   .greedy-nav { justify-content: space-between; position: relative; padding-right: .5rem; }
   .greedy-nav .greedy-nav__toggle {
@@ -355,6 +346,7 @@ html  { scroll-padding-top: 76px; } /* for #anchor links and ToC jumps */
   }
   .greedy-nav .visible-links {
     display: none !important;
+    pointer-events: none;
     flex-direction: column;
     position: absolute;
     top: 100%;
@@ -365,5 +357,9 @@ html  { scroll-padding-top: 76px; } /* for #anchor links and ToC jumps */
     padding: .5rem;
     box-shadow: 0 10px 30px rgba(0,0,0,.08);
   }
-  .greedy-nav.is-open .visible-links { display: flex !important; }
+  .greedy-nav.is-open .visible-links {
+    display: flex !important;
+    pointer-events: auto;
+  }
 }
+
