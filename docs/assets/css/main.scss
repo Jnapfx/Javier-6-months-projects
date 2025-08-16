@@ -312,10 +312,47 @@ img.rounded {
     }
 }
 
+/* ===== v6: Fixed header, working hamburger, and hide big H1 on mobile ===== */
 
-/* ===== v5: force hamburger on mobile and hide links by default ===== */
+/* Make the site header fixed across the site (more reliable than sticky on iOS) */
+.site-header, .masthead {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10000;
+  background: rgba(255,255,255,0.96);
+  backdrop-filter: saturate(120%) blur(6px);
+  border-bottom: 1px solid #eaeaea;
+}
+
+/* Push content down so it's not covered by the fixed header */
+body { padding-top: 68px; }
+html  { scroll-padding-top: 76px; } /* for #anchor links and ToC jumps */
+
+/* Remove large page title on mobile to avoid duplication with hero name */
+@media (max-width: 900px) {
+  .page__title { display: none; }
+}
+
+/* Keep only the logo in the header (hide textual title) */
+.site-header .site-title, .masthead .site-title { display: none !important; }
+.site-logo img { height: 28px; }
+
+/* Center the nav on desktop */
+.greedy-nav { display: flex; align-items: center; justify-content: center; }
+.greedy-nav .visible-links { display: flex; justify-content: center; margin: 0 auto; gap: .5rem; }
+.greedy-nav .visible-links > li > a { padding: .8rem .9rem; font-weight: 600; }
+
+/* Mobile hamburger behavior */
 @media (max-width: 900px) {
   .greedy-nav { justify-content: space-between; position: relative; padding-right: .5rem; }
+  .greedy-nav .greedy-nav__toggle {
+    display: inline-flex !important;
+    visibility: visible !important;
+    align-items: center; justify-content: center;
+    width: 40px; height: 40px; border: 0; background: transparent; cursor: pointer; border-radius: 10px;
+  }
   .greedy-nav .visible-links {
     display: none !important;
     flex-direction: column;
@@ -327,15 +364,6 @@ img.rounded {
     border-radius: 12px;
     padding: .5rem;
     box-shadow: 0 10px 30px rgba(0,0,0,.08);
-    z-index: 10000;
   }
   .greedy-nav.is-open .visible-links { display: flex !important; }
-  .greedy-nav .greedy-nav__toggle {
-    display: inline-flex !important;
-    visibility: visible !important;
-    align-items: center; justify-content: center;
-    width: 40px; height: 40px;
-    border: 0; background: transparent; cursor: pointer; border-radius: 10px;
-  }
 }
-
