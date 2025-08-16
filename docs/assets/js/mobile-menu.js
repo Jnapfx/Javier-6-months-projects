@@ -12,9 +12,26 @@ document.addEventListener('DOMContentLoaded', function () {
   } else {
     btn.classList.remove('hidden');
   }
-  function closeMenu(){ nav.classList.remove('is-open'); btn.setAttribute('aria-expanded','false'); }
-  btn.setAttribute('aria-expanded','false');
-  btn.addEventListener('click', function(){ const open = nav.classList.toggle('is-open'); btn.setAttribute('aria-expanded', open ? 'true':'false'); });
-  nav.querySelectorAll('.visible-links a').forEach(a => a.addEventListener('click', closeMenu));
-  document.addEventListener('click', e => { if (!nav.contains(e.target)) closeMenu(); });
+
+  function closeMenu() {
+    nav.classList.remove('is-open');
+    btn.setAttribute('aria-expanded', 'false');
+  }
+
+  btn.setAttribute('aria-expanded', 'false');
+  btn.addEventListener('click', function (e) {
+    e.stopPropagation();
+    const open = nav.classList.toggle('is-open');
+    btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+  });
+
+  // Close when a link is clicked
+  nav.querySelectorAll('.visible-links a').forEach(function (a) {
+    a.addEventListener('click', function () { closeMenu(); });
+  });
+
+  // Close when clicking outside
+  document.addEventListener('click', function (e) {
+    if (!nav.contains(e.target)) closeMenu();
+  });
 });

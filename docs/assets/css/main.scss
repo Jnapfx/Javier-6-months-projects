@@ -312,38 +312,51 @@ img.rounded {
     }
 }
 
+/* ===== v8: fix overlap, desktop hamburger hidden, mobile follow/taps ===== */
 
-/* ===== v7 fixes ===== */
+/* Fixed header */
 .site-header, .masthead {
   position: fixed;
   top: 0; left: 0; right: 0;
-  z-index: 10000;
+  z-index: 5000; /* lower than dropdown when open, high enough for header */
   background: rgba(255,255,255,0.96);
   backdrop-filter: saturate(120%) blur(6px);
   border-bottom: 1px solid #eaeaea;
 }
-:root { --header-h-desktop: 76px; --header-h-mobile: 64px; }
+
+/* Safer offsets so nothing quede debajo del header */
+:root { --header-h-desktop: 90px; --header-h-mobile: 72px; }
 body { padding-top: var(--header-h-desktop); }
 html { scroll-padding-top: calc(var(--header-h-desktop) + 8px); }
+
 @media (max-width: 900px) {
   body { padding-top: var(--header-h-mobile); }
   html { scroll-padding-top: calc(var(--header-h-mobile) + 8px); }
-  .page__title { display: none; }
+  .page__title { display: none; } /* evita doble título grande */
 }
+
+/* Logo only, no textual site-title */
 .site-header .site-title, .masthead .site-title { display: none !important; }
 .site-logo img { height: 28px; }
+
+/* Desktop: centered nav; hide hamburger */
 .greedy-nav { display: flex; align-items: center; justify-content: center; }
 .greedy-nav .visible-links { display: flex; justify-content: center; margin: 0 auto; gap: .5rem; }
 .greedy-nav .visible-links > li > a { padding: .8rem .9rem; font-weight: 600; }
 .greedy-nav .greedy-nav__toggle { display: none !important; }
+
+/* Mobile menu */
 @media (max-width: 900px) {
   .greedy-nav { justify-content: space-between; position: relative; padding-right: .5rem; }
+
   .greedy-nav .greedy-nav__toggle {
     display: inline-flex !important;
     visibility: visible !important;
     align-items: center; justify-content: center;
     width: 40px; height: 40px; border: 0; background: transparent; cursor: pointer; border-radius: 10px;
   }
+
+  /* Panel oculto: no bloquea clics bajo él */
   .greedy-nav .visible-links {
     display: none !important;
     pointer-events: none;
@@ -356,10 +369,13 @@ html { scroll-padding-top: calc(var(--header-h-desktop) + 8px); }
     border-radius: 12px;
     padding: .5rem;
     box-shadow: 0 10px 30px rgba(0,0,0,.08);
+    z-index: auto;
   }
+
+  /* Al abrir, sí recibe clics y queda arriba de todo */
   .greedy-nav.is-open .visible-links {
     display: flex !important;
     pointer-events: auto;
+    z-index: 11000;
   }
 }
-
