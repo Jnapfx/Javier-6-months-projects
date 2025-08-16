@@ -1,3 +1,4 @@
+
 document.addEventListener('DOMContentLoaded', function () {
   var logo = document.querySelector('.masthead .site-logo, .site-header .site-logo, .masthead a.site-title, .site-header a.site-title');
   if (logo) {
