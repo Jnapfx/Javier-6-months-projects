@@ -1,0 +1,39 @@
+title: Javier Napoles
+description: Portfolio showcasing SOC Labs projects, and case studies.
+url: https://jnapfx.github.io
+baseurl: /Javier-6-months-projects
+remote_theme: mmistakes/minimal-mistakes
+minimal_mistakes_skin: default
+author:
+  name: Javier Napoles
+  avatar: /assets/img/javier_headshot.jpeg
+  bio: Graphic Designer Evolving into Cybersecurity Professional
+  email: jnapfx@gmail.com
+  links:
+  - label: GitHub
+    icon: fab fa-github
+    url: https://github.com/Jnapfx
+  - label: LinkedIn
+    icon: fab fa-linkedin
+    url: https://www.linkedin.com/in/javier-napoles-3513031a7/
+logo: /assets/img/dae-logo.png
+plugins:
+- jekyll-feed
+- jekyll-seo-tag
+- jekyll-include-cache
+- jekyll-remote-theme
+markdown: kramdown
+highlighter: rouge
+permalink: pretty
+defaults:
+- scope:
+    path: ''
+    type: pages
+  values:
+    layout: single
+    toc: true
+    toc_sticky: true
+    author_profile: true
+footer_scripts:
+- /assets/js/dae-link.js
+- /assets/js/mobile-menu.js
