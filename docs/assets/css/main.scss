@@ -419,6 +419,21 @@ html { scroll-padding-top: calc(var(--header-h-desktop) + 8px); }
   .greedy-nav.is-open .visible-links > li {
     margin: .25rem 0;
   }
+/* --- Make author profile fixed at the top left --- */
+.sidebar.sticky,
+.author__sidebar,
+#author-profile {
+  position: fixed !important;
+  top: 100px;     /* adjust depending on your header height */
+  left: 20px;
+  width: 260px;   /* recommended width so layout doesn’t break */
+  z-index: 3000;  /* keep above content */
+}
+
+/* Push main content to the right so it’s not hidden under the fixed sidebar */
+.page__content {
+  margin-left: 300px;  /* slightly larger than sidebar width */
+}
 
   /* Optional: prevent background scroll when menu is open */
   .nav-open { overflow: hidden; }
