@@ -18,17 +18,17 @@ layout: single
 
 ## 🎓 Education
 
-<p><strong>District Arts & Education (DAE)</strong><br>
-<em>Cybersecurity Program</em><br>
-<em>Expected Graduation: Oct 2025</em></p>
+**District Arts & Education (DAE)**  
+*Cybersecurity Program*  
+*Expected Graduation: Oct 2025*  
 
-<p><strong>Faculty of Arquitecture and Design (FAD)</strong><br>
-<em>Graphic Design</em><br>
-<em>(2010-2015)</em></p>
+**Faculty of Arquitecture and Design (FAD)**
+*Graphic Design*
+*(2010-2015)*
 
-<p><strong>Relevant Coursework:</strong><br>
-<em>Google Cybersecurity Certificate (2024)</em></p>
 
+**Relevant Coursework:**
+*Google Cybersecurity Certificate (2024)*
 
 
 ---
