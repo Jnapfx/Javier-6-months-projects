@@ -4,7 +4,6 @@ Welcome to the DAE Projects repository! This single README provides a concise su
 
 ---
 
-
 ## Credits & Contact
 
 If you have questions, suggestions, or want to contribute to any subproject, please feel free to reach out:
@@ -14,19 +13,22 @@ If you have questions, suggestions, or want to contribute to any subproject, ple
 
 We hope you find these resources helpful for learning algorithms, Unix, AI concepts, and building Python-based GUIs for a real-world application. Enjoy exploring the DAE Projects!
 
-
 ---
-
 
 ## Special Thanks
 
+Kyley Komschlies  
+Kakra Detome  
+Abhinav Piratla  
+Devanshi Tandel  
+Sakshi Goenka  
 
-Kyley Komschlies
+---
 
-Kakra Detome
+## 🌟 More About Me
 
-Abhinav Piratla
+I’m constantly learning, building, and sharing new projects.  
+If you’re curious about my journey and want to explore more:  
 
-Devanshi Tandel
+➡️ **[Visit My Portfolio & Projects](https://jnapfx.github.io/Javier-6-months-projects/)**  
 
-Sashi
