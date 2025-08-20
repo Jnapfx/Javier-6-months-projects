@@ -35,6 +35,39 @@
     }
 
     btn.addEventListener('click', function(e){ e.stopPropagation(); toggleMenu(); });
+    
+    // Handle Follow button for author social links
+    var followBtn = document.querySelector('.author__urls-wrapper button.btn');
+    if (followBtn) {
+      function toggleAuthorLinks() {
+        var authorLinksWrapper = document.querySelector('.author__urls-wrapper');
+        if (authorLinksWrapper) {
+          if (authorLinksWrapper.classList.contains('is--visible')) {
+            authorLinksWrapper.classList.remove('is--visible');
+            followBtn.textContent = 'Follow';
+          } else {
+            authorLinksWrapper.classList.add('is--visible');
+            followBtn.textContent = 'Close';
+          }
+        }
+      }
+      
+      followBtn.addEventListener('click', function(e) {
+        e.preventDefault();
+        e.stopPropagation();
+        toggleAuthorLinks();
+      });
+      
+      // Close author links when clicking outside
+      document.addEventListener('click', function(e) {
+        var authorLinksWrapper = document.querySelector('.author__urls-wrapper');
+        if (authorLinksWrapper && authorLinksWrapper.classList.contains('is--visible') && 
+            !authorLinksWrapper.contains(e.target) && e.target !== followBtn) {
+          authorLinksWrapper.classList.remove('is--visible');
+          followBtn.textContent = 'Follow';
+        }
+      });
+    }
 
     // Close when clicking a link
     (visible ? visible.querySelectorAll('a') : []).forEach(function(a){
