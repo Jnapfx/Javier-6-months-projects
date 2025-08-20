@@ -9,13 +9,73 @@ layout: single
        style="max-width:200px; border-radius:50%; box-shadow:0 4px 12px rgba(0,0,0,.15);">
 </div>
 
+<!-- Author Profile Sidebar -->
+<div class="author__urls-wrapper" style="position: fixed; right: 20px; top: 100px; background: white; border: 1px solid #eaeaea; border-radius: 8px; padding: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); display: none;">
+  <button class="btn" style="background-color: #007bff; color: white; border: none; padding: 8px 16px; border-radius: 4px; cursor: pointer;">Follow</button>
+  <ul class="author__urls" style="display: none; list-style-type: none; padding: 0; margin: 10px 0 0 0;">
+    <li style="margin-bottom: 8px;">
+      <a href="https://github.com/Jnapfx" style="display: flex; align-items: center; color: #333; text-decoration: none;">
+        <i class="fab fa-github" style="margin-right: 8px;"></i> GitHub
+      </a>
+    </li>
+    <li style="margin-bottom: 8px;">
+      <a href="https://www.linkedin.com/in/javier-napoles-3513031a7/" style="display: flex; align-items: center; color: #0077b5; text-decoration: none;">
+        <i class="fab fa-linkedin" style="margin-right: 8px;"></i> LinkedIn
+      </a>
+    </li>
+    <li>
+      <a href="mailto:jnapfx@gmail.com" style="display: flex; align-items: center; color: #007bff; text-decoration: none;">
+        <i class="fas fa-envelope" style="margin-right: 8px;"></i> Email
+      </a>
+    </li>
+  </ul>
+</div>
+
+<style>
+  @media (max-width: 768px) {
+    .author__urls-wrapper {
+      display: block !important; /* Show on mobile */
+    }
+  }
+</style>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    var followBtn = document.querySelector('.author__urls-wrapper button.btn');
+    var authorUrls = document.querySelector('.author__urls-wrapper .author__urls');
+    
+    if (followBtn && authorUrls) {
+      followBtn.addEventListener('click', function(e) {
+        e.preventDefault();
+        e.stopPropagation();
+        
+        if (authorUrls.style.display === 'none') {
+          authorUrls.style.display = 'block';
+          followBtn.textContent = 'Close';
+        } else {
+          authorUrls.style.display = 'none';
+          followBtn.textContent = 'Follow';
+        }
+      });
+      
+      // Close when clicking outside
+      document.addEventListener('click', function(e) {
+        if (!e.target.closest('.author__urls-wrapper')) {
+          authorUrls.style.display = 'none';
+          followBtn.textContent = 'Follow';
+        }
+      });
+    }
+  });
+</script>
+
 ## My Journey in Cybersecurity 
 
-Hi, I’m **Javier Napoles** — a Cybersecurity student focused on SOC Analysis, blending a decade of design experience with a passion for defending enterprise environments.
-I’m **actively developing** my technical skills by building **hands-on labs**, fine-tuning detections, and creating **repeatable playbooks** to enhance blue-team operations. 
+Hi, I'm **Javier Napoles** — a Cybersecurity student focused on SOC Analysis, blending a decade of design experience with a passion for defending enterprise environments.
+I'm **actively developing** my technical skills by building **hands-on labs**, fine-tuning detections, and creating **repeatable playbooks** to enhance blue-team operations. 
 
 
-Currently pursuing my **Cybersecurity degree at DAE** *(Expected Graduation: October 2025)*, I’m looking for a **SOC Analyst role** where I can **continue learning** and contribute to robust defense systems.  
+Currently pursuing my **Cybersecurity degree at DAE** *(Expected Graduation: October 2025)*, I'm looking for a **SOC Analyst role** where I can **continue learning** and contribute to robust defense systems.  
 
 ---
 
@@ -45,7 +105,7 @@ Currently pursuing my **Cybersecurity degree at DAE** *(Expected Graduation: Oct
 
 ---
 
-*“Combining creativity and analytical thinking to build, document, and improve effective cybersecurity defenses.”*
+*"Combining creativity and analytical thinking to build, document, and improve effective cybersecurity defenses."*
 
 <div style="text-align:center; margin-top:2rem;">
   <a href="https://www.mydae.org/" target="_blank" rel="noopener">
