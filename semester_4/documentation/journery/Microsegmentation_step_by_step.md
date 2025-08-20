@@ -78,7 +78,7 @@ sudo ufw allow out to 192.168.1.1 proto udp port 53   # adjust DNS IP
 sudo ufw allow out proto icmp                        # ping
 
 # (Optional) SSH from Windows Manager
-sudo ufw allow from 192.168.1.160 to any port 22 proto tcp
+sudo ufw allow from 192.168.1.154 to any port 22 proto tcp
 
 sudo ufw enable
 sudo ufw status numbered
@@ -95,7 +95,7 @@ nmap -Pn -p 3389,445,135 192.168.1.154   # should be filtered/closed
 ```
 
 **From Windows:**
-- Open `https://192.168.1.160:5601` → confirm agents are **active**.  
+- Open `https://192.168.1.154:5601` → confirm agents are **active**.  
 - Trigger activity on Parrot (`sudo apt update`) → check logs in Wazuh dashboard.  
 
 ---
