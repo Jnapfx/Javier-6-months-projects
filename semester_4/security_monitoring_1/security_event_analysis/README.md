@@ -1,9 +1,9 @@
 # Security Event Analysis Report
 
-> **Project:** Mini SOC with Micro-Segmentation  
+> **Project:** Divide & Defend: A Hands-On SOC Lab Project with Micro-Segmentation 
 > **Date Range:** Aug 20–24, 2025  
 > **Hosts:** Windows 10 (Wazuh Manager + Dashboard), Ubuntu/WSL, Parrot OS  
-> **Analyst:** [Your Name]
+> **Analyst:** Javier Napoles
 
 ---
 
