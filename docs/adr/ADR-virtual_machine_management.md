@@ -27,4 +27,26 @@ We chose **UTM** as the virtualization platform for hosting our lab VMs.
 ## References
 - [UTM Official Site](https://mac.getutm.app)  
 - [Apple Hypervisor Framework](https://developer.apple.com/documentation/hypervisor)  
-- Lab architecture diagram: *[insert link or attach image]*  
+- Lab architecture diagram: 
+```mermaid
+flowchart LR
+  subgraph Host[Windows 10 Host]
+    Dkr[Docker Desktop]
+    Mgr[Wazuh Manager 1514/1515 TCP]
+    Dbd[Wazuh Dashboard 5601]
+    Idx[Wazuh Indexer 9200]
+  end
+
+  subgraph Agents
+    Win[Windows 10 Agent]
+    WSL[WSL Agent]
+    Parrot[Parrot OS Agent]
+  end
+
+  Win -- 1514/1515 --> Mgr
+  WSL -- 1514/1515 --> Mgr
+  Parrot -- 1514/1515 --> Mgr
+
+  Mgr -- Filebeat --> Idx
+  Idx -- API --> Dbd
+```
