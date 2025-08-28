@@ -116,8 +116,7 @@ Example Wazuh Dashboard (Elastic Integration):
 - 🌐 Outbound traffic anomalies  
 - 📈 Alert severity trends (last 7 days)  
 
-*(Dashboard screenshot placeholder above)*  
-
+![Dashboard Screenshot](screenshots/wazuh-dashboard.png)
 ---
 
 ## 5. Professional Standards
