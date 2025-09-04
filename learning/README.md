@@ -198,8 +198,22 @@ The Grafana integration enables:
 ![Final Dashboard](screenshots/12_final_dashboard.png)
 
 ## 11. System Architecture Diagram
+## 📖 Architecture Overview
 
-f```mermaid
+This diagram shows how the different components of the SOC lab interact:
+
+- **Kali Linux**: acts as the attacker, launching brute force and DoS attempts.  
+- **Parrot OS Agents**: virtual machines that generate logs (Syslog, Auth) and system metrics (CPU, RAM, Network).  
+- **Wazuh Manager**: receives and analyzes logs sent by the agents.  
+- **Prometheus**: collects system metrics exposed via `node_exporter`.  
+- **Elasticsearch / OpenSearch (Docker)**: stores data processed by Wazuh.  
+- **Wazuh Dashboard**: interface to visualize alerts directly from OpenSearch.  
+- **Grafana**: advanced visualization layer combining Wazuh (OpenSearch) data with Prometheus metrics.  
+- **RabbitMQ / MinIO**: internal services that support Wazuh’s infrastructure.  
+
+👉 **In summary:** logs and metrics flow from the agents into Wazuh and Prometheus, and are finally visualized through Grafana and the Wazuh Dashboard.
+
+```mermaid
 flowchart TD
  subgraph Parrot_OS_Agents["Parrot OS Agents 3 VMs"]
         WM["Wazuh Manager"]
@@ -227,11 +241,7 @@ flowchart TD
     Parrot_OS_Agents --> WM
     G --> ES & P
     Attacker --> Parrot_OS_Agents
-
     style Parrot_OS_Agents fill:#C8E6C9
     style Attacker fill:#FFCDD2
     style Visualization fill:#FFE0B2
     style Docker_on_Mac fill:#BBDEFB
-
-
-
