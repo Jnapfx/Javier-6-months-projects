@@ -1,0 +1,39 @@
+# SOC Project Architecture
+
+```mermaid
+flowchart TD
+    subgraph Parrot_OS_Agents[Parrot OS Agents 3 VMs]
+        A1[Logs: Syslog, Auth] -->|Send logs| WM[Wazuh Agent]
+        A2[Metrics: CPU, RAM, NET] -->|Expose via node_exporter| P[Prometheus]
+    end
+
+    subgraph Attacker[Kali Linux]
+        K1[SSH Brute Force / DoS] --> A1
+    end
+
+    subgraph Docker_on_Mac[Docker on macOS]
+        WM[Wazuh Manager]
+        ES[Elasticsearch / OpenSearch]
+        WD[Wazuh Dashboard]
+        MQ[RabbitMQ]
+        MINIO[MinIO]
+
+        WM --> ES
+        ES --> WD
+    end
+
+    subgraph Visualization[Visualization Layer]
+        G[Grafana]
+    end
+
+    P[Prometheus]
+
+    %% Connections
+    Parrot_OS_Agents --> WM
+    G --> ES
+    G --> P
+    Attacker --> Parrot_OS_Agents
+
+
+
+
