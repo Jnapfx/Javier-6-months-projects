@@ -1,42 +1,49 @@
-# 📊 Grafana Integration with Wazuh – SOC Project *Divide and Defend*
+# 📘 Learning Log
 
-This document explains, step by step and with screenshots, how **Grafana** was integrated into the *Divide and Defend* SOC project as an advanced visualization layer for **Wazuh**.  
-
-The goal is to have **professional SOC dashboards** to analyze alerts, rules, agents, and possible attacks in real time.
-
----
-
-## 1. Prerequisites
-- **Wazuh stack** running in Docker:
-  - `wazuh.manager`
-  - `wazuh.indexer`
-  - `wazuh.dashboard`
-- Docker + Docker Compose installed
-- Access credentials for Wazuh Indexer:
-  ```
-  admin / SecretPassword
-  ```
+This folder documents my self-learning and integration of a new technology into my existing project.  
+It contains my initial plan, daily progress log, and supporting evidence (e.g. test output, branches, and PRs) that demonstrate what I learned and how I applied it.
 
 ---
 
-## 2. Environment Preparation
+## 🔗 Link to Plan
 
-### 2.1 Create provisioning structure for Grafana
-Inside the `single-node` folder:
-
-```bash
-mkdir -p grafana/provisioning/datasources
-```
-
-📸 Screenshot: directory structure created  
-![Provisioning folder](screenshots/01_provisioning_folder.png)
+[PLAN.md](./PLAN.md) – My initial plan with chosen technology, rationale, and integration tasks.
 
 ---
 
-## 3. Data Source Configuration
+## 📅 Daily Progress Log
 
-File created:  
-`grafana/provisioning/datasources/opensearch.yml`
+### Task 1 — Connect Grafana to Elasticsearch (2025-09-03)
+
+**📆 Date:** 2025-09-04  
+**🛠️ Task:** Prepared environment and provisioning for Grafana.  
+
+**🔍 Evidence:**  
+- Wazuh stack running (`wazuh.manager`, `wazuh.indexer`, `wazuh.dashboard`).  
+- Docker & Docker Compose installed.  
+- Verified credentials: `admin / SecretPassword`.  
+- Created provisioning directory:  
+  ```bash
+  mkdir -p grafana/provisioning/datasources
+  ```  
+- Grafana download site: ![Grafana-download](screenshots/01_provisioning_folder.png)
+
+- Grafana pulling request: ![Pullin-grafana](screenshots/03_compose_config.png)
+
+- Grafana-container: ![grafana-container](screenshots/05_grafana_docker_container.png)
+
+**📝 Notes:**  
+Provisioning ensures Grafana auto-loads the OpenSearch datasource on startup.
+
+---
+
+**📆 Date:** 2025-09-05  
+**🛠️ Task:** Configured Grafana datasource for Wazuh (OpenSearch).  
+
+**🔍 Evidence:**  
+- File created: `grafana/provisioning/datasources/opensearch.yml`  
+
+- Grafana .yml file: ![grafana .yml file](screenshots/02_datasource_config.png)
 
 ```yaml
 apiVersion: 1
@@ -57,16 +64,19 @@ datasources:
     isDefault: true
 ```
 
-📸 Screenshot: Data source config  
-![Datasource Config](screenshots/02_datasource_config.png)
+**📝 Notes:**  
+Success criterion met: Grafana connected and can query OpenSearch. Task 1 completed.  
 
 ---
 
-## 4. Add Grafana to `docker-compose.yml`
+### Task 2 — Build SOC Dashboards (2025-09-06)
 
-In the `services:` section:
+**📆 Date:** 2025-09-06  
+**🛠️ Task:** Added Grafana service to `docker-compose.yml` and deployed.  
 
-```yaml
+**🔍 Evidence:**  
+- Config snippet:  
+  ```yaml
   grafana:
     image: grafana/grafana:latest
     container_name: grafana
@@ -80,139 +90,55 @@ In the `services:` section:
       - wazuh.indexer
     volumes:
       - ./grafana/provisioning/datasources:/etc/grafana/provisioning/datasources
-```
+  ```  
+- Command output:  
+  ```bash
+  docker compose up -d grafana
+  docker ps | grep grafana
+  ```  
+- Screenshots:  
+  - screenshots/03_compose_config.png`  
+  - screenshots/04_container_running.png`  
+  - screenshots/05_grafana_login.png`  
+  - screenshots/06_datasource_online.png`
+  - Grafana-container: ![grafana](screenshots/03_compose_config.png)  
 
-📸 Screenshot: Grafana block in docker-compose.yml  
-![Compose Config](screenshots/03_compose_config.png)
-
----
-
-## 5. Deploy Grafana
-
-Start the service:
-
-```bash
-docker compose up -d grafana
-docker ps | grep grafana
-```
-
-📸 Screenshot: Grafana container running  
-![Grafana Container](screenshots/04_container_running.png)
+**📝 Notes:**  
+Grafana accessible at [http://localhost:3001](http://localhost:3001). Connection verified.  
 
 ---
 
-## 6. Access Grafana
+**📆 Date:** 2025-09-08  
+**🛠️ Task:** Built core SOC panels in Grafana.  
 
-URL: [http://localhost:3001](http://localhost:3001)  
-Default credentials:
-- User: `admin`
-- Password: `admin` (will be changed on first login)
+**🔍 Evidence:**  
+- **Alerts Over Time** → `screenshots/07_alerts_over_time.png`  
+- **Top Agents** → `screenshots/08_top_agents.png`  
+- **Top Alert Rules** → `screenshots/09_top_rules.png`  
+- **DoS Detection** → `screenshots/10_dos_detection.png`  
 
-📸 Screenshot: Grafana login  
-![Grafana Login](screenshots/05_grafana_login.png)
-
-📸 Screenshot: Data source connected  
-![Datasource Online](screenshots/06_datasource_online.png)
-
----
-
-## 7. SOC Panels
-
-### 7.1 Alerts Over Time
-- Query: `*`
-- Group by: Date Histogram (`@timestamp`)
-- Metric: Count
-- Visualization: Time series
-
-📸  
-![Alerts Over Time](screenshots/07_alerts_over_time.png)
+**📝 Notes:**  
+Dashboards show dynamic Wazuh data. Success criterion achieved for Task 2.  
 
 ---
 
-### 7.2 Top Agents
-- Group by: Terms → `agent.name.keyword`
-- Metric: Count
-- Visualization: Pie chart
+**📆 Date:** 2025-09-09  
+**🛠️ Task:** Consolidated full SOC dashboard with multiple panels.  
 
-📸  
-![Top Agents](screenshots/08_top_agents.png)
+**🔍 Evidence:**  
+- Dashboard screenshots:  
+  - `screenshots/11_dashboard_overview.png`  
+  - `screenshots/12_final_dashboard.png`  
 
----
-
-### 7.3 Top Alert Rules
-- Group by: Terms → `rule.description.keyword`
-- Metric: Count
-- Visualization: Horizontal bar chart
-
-📸  
-![Top Rules](screenshots/09_top_rules.png)
+**📝 Notes:**  
+Dashboard includes: Alerts Over Time, Top Agents, Top Rules, DoS Detection, Severity, MITRE ATT&CK, Compliance, and IP/Port breakdowns.  
 
 ---
 
-### 7.4 DoS Detection
-- Query:  
-  ```
-  rule.description:*DoS* OR rule.groups:dos
-  ```
-- Group by: Date Histogram (`@timestamp`)
-- Visualization: Time series
+**📆 Date:** 2025-09-10  
+**🛠️ Task:** Documented system architecture for SOC lab.  
 
-📸  
-![DoS Detection](screenshots/10_dos_detection.png)
-
----
-
-## 8. Complete SOC Dashboard
-
-Consolidated panels:
-- Alerts Over Time  
-- Top Agents  
-- Top Rules  
-- DoS Detection  
-- Severity (`rule.level`)  
-- Top Source IPs (`srcip`)  
-- Top Destination Ports (`dstport`)  
-- MITRE ATT&CK (tactics & techniques)  
-- Compliance (GDPR, NIST)
-
-📸  
-![SOC Dashboard](screenshots/11_dashboard_overview.png)
-
----
-
-## 9. Notes
-- Use `.keyword` fields when available to group exact values.  
-- For system metrics (CPU/RAM/Disk), enable **syscollector** or use **Prometheus + node_exporter**.  
-- Dashboards can also be provisioned via `grafana/provisioning/dashboards/`.
-
----
-
-## 10. Conclusion
-The Grafana integration enables:
-- Advanced visualization of alerts and agents.  
-- Real-time monitoring of DoS attempts and authentication failures.  
-- Context aligned with **MITRE ATT&CK** and compliance frameworks.  
-- Professional SOC dashboards to showcase the *Divide and Defend* project.
-
-📸  
-![Final Dashboard](screenshots/12_final_dashboard.png)
-
-## 11. System Architecture Diagram
-## 📖 Architecture Overview
-
-This diagram shows how the different components of the SOC lab interact:
-
-- **Kali Linux**: acts as the attacker, launching brute force and DoS attempts.  
-- **Parrot OS Agents**: virtual machines that generate logs (Syslog, Auth) and system metrics (CPU, RAM, Network).  
-- **Wazuh Manager**: receives and analyzes logs sent by the agents.  
-- **Prometheus**: collects system metrics exposed via `node_exporter`.  
-- **Elasticsearch / OpenSearch (Docker)**: stores data processed by Wazuh.  
-- **Wazuh Dashboard**: interface to visualize alerts directly from OpenSearch.  
-- **Grafana**: advanced visualization layer combining Wazuh (OpenSearch) data with Prometheus metrics.  
-- **RabbitMQ / MinIO**: internal services that support Wazuh’s infrastructure.  
-
-👉 **In summary:** logs and metrics flow from the agents into Wazuh and Prometheus, and are finally visualized through Grafana and the Wazuh Dashboard.
-
+**🔍 Evidence:**  
 ```mermaid
 flowchart TD
  subgraph Parrot_OS_Agents["Parrot OS Agents 3 VMs"]
@@ -245,3 +171,30 @@ flowchart TD
     style Attacker fill:#FFCDD2
     style Visualization fill:#FFE0B2
     style Docker_on_Mac fill:#BBDEFB
+```
+
+**📝 Notes:**  
+Architecture illustrates full flow: attacker → agents → Wazuh & Prometheus → Grafana dashboards.  
+
+---
+
+### Task 3 — Integrate Multi-Source Data (2025-09-13 → 2025-09-19)
+
+**📆 Date:** Pending  
+**🛠️ Task:** Integrate OpenVAS vulnerability scan results into Grafana dashboards.  
+
+**🔍 Evidence:**  
+- Will export OpenVAS results and configure as a Grafana datasource.  
+- Target: combined panel with alerts + vulnerability metrics.  
+
+**📝 Notes:**  
+To be completed in Week 3 as per PLAN.md timeline.  
+
+---
+
+## 📌 Tips for Maintaining This Log
+
+- Keep adding entries as you progress day by day.  
+- Include real commands, outputs, screenshots (if supported), and links.  
+- Keep answers specific enough that you can explain them in a mock interview.  
+- You can delete instructions and placeholders once you're comfortable.  
