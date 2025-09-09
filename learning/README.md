@@ -26,11 +26,7 @@ It contains my initial plan, daily progress log, and supporting evidence (e.g. t
   ```bash
   mkdir -p grafana/provisioning/datasources
   ```  
-- Grafana download site: ![Grafana-download](screenshots/01_provisioning_folder.png)
 
-- Grafana pulling request: ![Pullin-grafana](screenshots/03_compose_config.png)
-
-- Grafana-container: ![grafana-container](screenshots/05_grafana_docker_container.png)
 
 **📝 Notes:**  
 Provisioning ensures Grafana auto-loads the OpenSearch datasource on startup.
@@ -42,8 +38,6 @@ Provisioning ensures Grafana auto-loads the OpenSearch datasource on startup.
 
 **🔍 Evidence:**  
 - File created: `grafana/provisioning/datasources/opensearch.yml`  
-
-- Grafana .yml file: ![grafana .yml file](screenshots/02_datasource_config.png)
 
 ```yaml
 apiVersion: 1
@@ -63,6 +57,8 @@ datasources:
       tlsSkipVerify: true
     isDefault: true
 ```
+
+![grafana .yml file](screenshots/opensearch.yml-file.png)
 
 **📝 Notes:**  
 Success criterion met: Grafana connected and can query OpenSearch. Task 1 completed.  
@@ -97,14 +93,14 @@ Success criterion met: Grafana connected and can query OpenSearch. Task 1 comple
   docker ps | grep grafana
   ```  
 - Screenshots:  
-  - screenshots/03_compose_config.png`  
-  - screenshots/04_container_running.png`  
-  - screenshots/05_grafana_login.png`  
-  - screenshots/06_datasource_online.png`
-  - Grafana-container: ![grafana](screenshots/03_compose_config.png)  
+  - Grafana pulling request: ![Pullin-grafana](screenshots/03_compose_config.png)
+  - Grafana container running: ![grafana-container](screenshots/05_grafana_docker_container.png) 
+  - Grafana login: ![grafana-login](screenshots/05_grafana_login.png)
+
+ 
 
 **📝 Notes:**  
-Grafana accessible at [http://localhost:3001](http://localhost:3001). Connection verified.  
+Grafana is accessible at [http://localhost:3001](http://localhost:3001) (using port 3001 to avoid conflicts). Connection verified.
 
 ---
 
@@ -112,10 +108,11 @@ Grafana accessible at [http://localhost:3001](http://localhost:3001). Connection
 **🛠️ Task:** Built core SOC panels in Grafana.  
 
 **🔍 Evidence:**  
-- **Alerts Over Time** → `screenshots/07_alerts_over_time.png`  
-- **Top Agents** → `screenshots/08_top_agents.png`  
-- **Top Alert Rules** → `screenshots/09_top_rules.png`  
-- **DoS Detection** → `screenshots/10_dos_detection.png`  
+- Alerts Over Time ![alerts-over-time](screenshots/07_alerts_over_time.png)
+- Top Agents ![top-agents](screenshots/08_top_agents.png)
+- Top Alert Rules ![top-rules](screenshots/09_top_rules.png)
+- DoS Detection ![DoS-detection](screenshots/10_dos_detection.png)
+
 
 **📝 Notes:**  
 Dashboards show dynamic Wazuh data. Success criterion achieved for Task 2.  
