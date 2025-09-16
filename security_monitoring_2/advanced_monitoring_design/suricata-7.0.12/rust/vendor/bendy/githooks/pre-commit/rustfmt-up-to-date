@@ -1,0 +1,13 @@
+#!/bin/bash
+set -euo pipefail
+
+EXPORT_DIR="$(mktemp -d --tmpdir= rustfmt-hook.XXXXXXX)"
+# Cleanup temp dir on exit
+trap '{ rm -rf "${EXPORT_DIR}"; }' EXIT
+
+git checkout-index -a --prefix="${EXPORT_DIR}/"
+cd "${EXPORT_DIR}"
+
+# Nightly version is pinned to avoid untracable version clashes.
+# Update from time to time manually or if any error is encounterd.
+cargo +nightly fmt -- --check
