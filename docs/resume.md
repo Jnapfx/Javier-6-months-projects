@@ -15,14 +15,15 @@ layout: single
   </p>
 </div>
 <div style="text-align:center; margin:2rem 0;">
-  <a href="{{ '/assets/files/Javier_Napoles_CV.pdf' | relative_url }}" 
-     download="Javier_Napoles_CV.pdf" 
+  <a href="{{ '/assets/files/JAVIER_NAPOLES_CV.pdf' | relative_url }}" 
+     download="JAVIER_NAPOLES_CV.pdf"
      style="background:#2c3e50; color:white; padding:0.75rem 1.5rem; 
             border-radius:6px; text-decoration:none; font-weight:bold; 
             box-shadow:0 2px 5px rgba(0,0,0,0.2);">
     ⬇️ Download CV (PDF)
   </a>
 </div>
+
 
 
 
