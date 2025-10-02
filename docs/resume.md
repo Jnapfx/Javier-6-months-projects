@@ -6,14 +6,24 @@ layout: single
 
 <div style="text-align:center; margin-bottom:2rem; padding:1.5rem; background:#f8f9fa; border-radius:8px;">
   <h1 style="margin:0; color:#2c3e50;">Javier Napoles</h1>
-  <p style="margin:0.5rem 0; font-size:1.1rem; color:#34495e;">Cybersecurity Student & Graphic designer</p>
+  <p style="margin:0.5rem 0; font-size:1.1rem; color:#34495e;">Cybersecurity Student & Graphic Designer</p>
   
   <p style="margin:0; font-size:1.1rem;">
     📧 <a href="mailto:jnapfx@gmail.com" style="color:#0077b5; text-decoration:none;">jnapfx@gmail.com</a> | 
     🔗 <a href="https://www.linkedin.com/in/javier-napoles-3513031a7" style="color:#0077b5; text-decoration:none;">LinkedIn</a> | 
-    🐙 <a href="https://github.com/Jnapfx" style="color:#0077b5; text-decoration:none;">GitHub</a>
+    🐙 <a href="https://github.com/jnapfx" style="color:#0077b5; text-decoration:none;">GitHub</a>
   </p>
 </div>
+<div style="text-align:center; margin:2rem 0;">
+  <a href="{{ '/assets/files/Javier_Napoles_CV.pdf' | relative_url }}" 
+     download="Javier_Napoles_CV.pdf" 
+     style="background:#2c3e50; color:white; padding:0.75rem 1.5rem; 
+            border-radius:6px; text-decoration:none; font-weight:bold; 
+            box-shadow:0 2px 5px rgba(0,0,0,0.2);">
+    ⬇️ Download CV (PDF)
+  </a>
+</div>
+
 
 
 ## 🎓 Education
@@ -22,29 +32,30 @@ layout: single
 *Cybersecurity Program*  
 *Expected Graduation: Oct 2025*  
 
-**Faculty of Arquitecture and Design (FAD)**
-*Graphic Design*
-*(2010-2015)*
+**Faculty of Architecture and Design (FAD)**  
+*Graphic Design*  
+*(2010–2015)*  
 
-
-**Relevant Coursework:**
+**Relevant Coursework:**  
 *Google Cybersecurity Certificate (2024)*
 
 
 ---
 
-## 💼 Experience
-
 ## 🧪 Technical Projects
 
-### Divide & Defend: A Hands-On SOC Lab Project with Micro-Segmentation  
+### Divide & Defend: SOC Lab Project with Micro-Segmentation & Real-Time Monitoring  
 **2025 – Capstone Lab Project**  
-- Built a home-based SOC lab with VMs simulating attacker, victim, and SIEM nodes.  
-- Simulated attacks using Nmap and Hydra; configured detection rules in Wazuh.  
-- Implemented micro-segmentation with UFW, iptables, and Windows Firewall.  
-- Parsed logs from Windows and Linux agents to identify brute-force attacks, new user creation, and unauthorized access.  
-- Conducted incident triage, threat hunting (OTX, MISP, AbuseIPDB), and vulnerability scans with Nmap/OpenVAS.  
-- Produced a professional final report with IOC analysis, detection maps, and remediation plans.  
+- Built a home-based SOC lab with multiple VMs simulating attacker, victim, and SIEM nodes.  
+- Deployed **Wazuh as the primary SIEM**, with custom rules for brute-force, privilege escalation, and unauthorized access.  
+- Simulated attacks using **Nmap** and **Hydra**; parsed logs from Linux and Windows agents.  
+- Implemented micro-segmentation with **iptables, UFW, and Windows Firewall**.  
+- Conducted incident triage and threat hunting with **OTX, MISP, AbuseIPDB**.  
+- Performed vulnerability scans using **OpenVAS and Nessus**.  
+- Integrated **Grafana dashboards with Wazuh** to visualize SOC metrics and detection trends.  
+- Configured **alerting workflows in Grafana** to send notifications directly to **Discord channels** for faster incident response.  
+- Produced a professional report with IOC analysis, detection dashboards, and remediation plans.  
+
 
 ---
 
@@ -74,38 +85,53 @@ layout: single
 ## 🛠️ Technical Skills
 
 ### Programming Languages
-- **Python** - Security automation, data analysis
-- **TypeScript/JavaScript** - Frontend security implementations
-- **SQL** - Database design, query optimization, injection prevention
+- **Python** – Basic scripting for automation and log parsing  
+- **HTML/CSS** – Foundational knowledge for web security contexts  
 
 ### Security Tools & Platforms
-- **SIEM**: Splunk, Wazuh
-- **Vulnerability Assessment**: Nessus, OpenVAS, Burp Suite
-- **Network Security**: Wireshark, Nmap, pfSense
-- **Incident Response**: MISP, TheHive, Volatility
+- **SIEM**: Wazuh (primary SOC tool)  
+- **Log Collection**: Wazuh agents (Windows & Linux) for event and system log forwarding 
+- **Threat Intelligence**: OTX, AbuseIPDB, MISP  
+- **Monitoring & Visualization**: Grafana (dashboards, SOC metrics, Discord alerting)  
+- **Vulnerability Assessment**: OpenVAS, Nessus  
+- **Network Security**: iptables, UFW, Windows Firewall, Nmap, Hydra, Metasploit (basic), Kali Linux attacker VM  
+- **Incident Response & Threat Hunting**: Detection rule tuning, triage workflows, IOC analysis, remediation plans  
 
-### Development & DevSecOps
-- **Version Control**: Git, GitHub Actions, GitLab CI/CD
+### Operating Systems & Virtualization
+- **Linux Distributions**: Parrot OS (agents), Kali Linux  
+- **Windows**: Endpoint monitoring and configuration  
+- **Virtualization**: UTM (Apple Silicon virtualization)  
+
+### Command Line & Remote Access
+- Comfortable using Linux/Unix terminal for basic system navigation, log review, configuration  
+- Secure remote connections via **SSH**  
+
+### Development & Collaboration
+- **Version Control**: Git, GitHub  
+- **Project Tools**: Notion, Monday.com, Figma  
+- **Creative Tools**: Adobe Creative Suite (Photoshop, Illustrator, InDesign, Premiere Pro, After Effects)  
+
 
 ---
 
 ## 🏆 Certifications & Training
 
-**In Progress:**
-- CompTIA Security+ (Scheduled: November 2025)
-- AWS Certified Security - Specialty (Scheduled: September 2025)
+**In Progress:**  
+- CompTIA Security+ (Scheduled: November 2025)  
+- AWS Certified Security - Specialty (Scheduled: September 2025)  
 
-**Completed:**
-- Google Cybersecurity Course (2024)
+**Completed:**  
+- Google Cybersecurity Certificate (2024)  
 
 
 ---
 
 ## 🎯 Professional Interests
 
-- **Security Operations**: SOC analysis, threat hunting, incident response
-- **Application Security**: Secure coding, vulnerability assessment
-- **Cloud Security**: Infrastructure protection, compliance automation
+- **Security Operations**: SOC analysis, threat hunting, incident response  
+- **Application Security**: Secure coding, vulnerability assessment  
+- **Cloud Security**: Infrastructure protection, compliance automation  
+
 
 ---
 
@@ -118,62 +144,3 @@ layout: single
          style="height:40px; opacity:0.8; box-shadow:none;">
   </a>
 </div>
-
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-4NCZMZSGWD"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){ dataLayer.push(arguments); }
-  gtag('js', new Date());
-  gtag('config', 'G-4NCZMZSGWD');
-
-  // --- Active time tracking (GA4-ready) ---
-  if (!window.__timeOnPageTrackerInitialized) {
-    window.__timeOnPageTrackerInitialized = true;
-
-    let seconds = 0;
-    const TICK_MS = 5000;          // count every 5s
-    const SEND_EVERY_SEC = 30;     // send every 30s
-    const IDLE_MS = 60000;         // consider idle after 60s without input
-
-    let pageActive = document.visibilityState === "visible" && document.hasFocus();
-    let lastActivity = Date.now();
-
-    const setActive = (state) => {
-      pageActive = state;
-      if (state) lastActivity = Date.now();
-    };
-
-    document.addEventListener("visibilitychange", () => {
-      setActive(document.visibilityState === "visible" && document.hasFocus());
-    });
-    window.addEventListener("focus",  () => setActive(true));
-    window.addEventListener("blur",   () => setActive(false));
-
-    // Update lastActivity on user input
-    ["mousemove","keydown","mousedown","touchstart","scroll"].forEach(ev => {
-      window.addEventListener(ev, () => { lastActivity = Date.now(); }, { passive: true });
-    });
-
-    const sendEvent = () => {
-      gtag("event", "time_on_page", {
-        time_on_page_sec: seconds,       // <-- create a GA4 custom metric for this
-        transport_type: "beacon"
-        // send_to: "G-4NCZMZSGWD"       // uncomment if you have multiple GA properties configured
-      });
-    };
-
-    const intervalId = setInterval(() => {
-      const idle = Date.now() - lastActivity > IDLE_MS;
-      if (pageActive && !idle) {
-        seconds += TICK_MS / 1000;
-        if (seconds % SEND_EVERY_SEC === 0) sendEvent();
-      }
-    }, TICK_MS);
-
-    // Flush on page exit
-    const flush = () => { if (seconds > 0) sendEvent(); };
-    window.addEventListener("pagehide", flush);
-    window.addEventListener("beforeunload", flush);
-  }
-</script>
