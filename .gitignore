@@ -1,0 +1,5 @@
+# Ignore system files and large videos
+.DS_Store
+*.mp4
+*.mov
+
