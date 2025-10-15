@@ -16,7 +16,15 @@ layout: single
 </div>
 
 
-
+<div style="text-align:center; margin:2rem 0;">
+  <a href="{{ '/assets/files/Javier_Napoles_Cybersecurity_Resume.pdf' | relative_url }}" 
+     download="Javier_Napoles_Cybersecurity_Resume.pdf"
+     style="background:#2c3e50; color:white; padding:0.75rem 1.5rem; 
+            border-radius:6px; text-decoration:none; font-weight:bold; 
+            box-shadow:0 2px 5px rgba(0,0,0,0.2);">
+    ⬇️ Download CV (PDF)
+  </a>
+</div>
 
 
 ## 🎓 Education
@@ -128,15 +136,7 @@ layout: single
 
 ---
 
-<div style="text-align:center; margin:2rem 0;">
-  <a href="{{ '/assets/files/JAVIER_NAPOLES_CV.pdf' | relative_url }}" 
-     download="JAVIER_NAPOLES_CV.pdf"
-     style="background:#2c3e50; color:white; padding:0.75rem 1.5rem; 
-            border-radius:6px; text-decoration:none; font-weight:bold; 
-            box-shadow:0 2px 5px rgba(0,0,0,0.2);">
-    ⬇️ Download CV (PDF)
-  </a>
-</div>
+
 
 <div style="text-align:center; margin-top:2rem; padding:1rem; background:#e8f4fd; border-radius:8px;">
   <p style="margin:0; font-style:italic; color:#2c3e50;">"Combining creativity and analytical thinking to build, document, and improve effective cybersecurity defenses."</p>
