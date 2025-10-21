@@ -19,9 +19,9 @@ permalink: /
 
 I'm passionate about building **secure, reliable systems** that help organizations defend against modern threats. My work focuses on:
 
-- 🛡️ **Security Operations**: SOC analysis, incident response, threat hunting
-- 📊 **Automation**: Security tooling, detection engineering
-- 📚 **Documentation**: Playbooks, procedures, knowledge sharing
+- **Security Operations**: SOC analysis, incident response, threat hunting
+- **Automation**: Security tooling, detection engineering
+- **Documentation**: Playbooks, procedures, knowledge sharing
 
 ### Current Focus
 

@@ -9,9 +9,9 @@ layout: single
   <p style="margin:0.5rem 0; font-size:1.1rem; color:#34495e;">Cybersecurity Student & Graphic Designer</p>
   
   <p style="margin:0; font-size:1.1rem;">
-    📧 <a href="mailto:jnapfx@gmail.com" style="color:#0077b5; text-decoration:none;">jnapfx@gmail.com</a> | 
-    🔗 <a href="https://www.linkedin.com/in/javier-napoles-3513031a7" style="color:#0077b5; text-decoration:none;">LinkedIn</a> | 
-    🐙 <a href="https://github.com/jnapfx" style="color:#0077b5; text-decoration:none;">GitHub</a>
+    <a href="mailto:jnapfx@gmail.com" style="color:#0077b5; text-decoration:none;">jnapfx@gmail.com</a> | 
+    <a href="https://www.linkedin.com/in/javier-napoles-3513031a7" style="color:#0077b5; text-decoration:none;">LinkedIn</a> | 
+    <a href="https://github.com/jnapfx" style="color:#0077b5; text-decoration:none;">GitHub</a>
   </p>
 </div>
 
@@ -22,12 +22,12 @@ layout: single
      style="background:#2c3e50; color:white; padding:0.75rem 1.5rem; 
             border-radius:6px; text-decoration:none; font-weight:bold; 
             box-shadow:0 2px 5px rgba(0,0,0,0.2);">
-    ⬇️ Download CV (PDF)
+    Download CV (PDF)
   </a>
 </div>
 
 
-## 🎓 Education
+## Education
 
 **District Arts & Education (DAE)**  
 *Cybersecurity Program*  
@@ -43,7 +43,7 @@ layout: single
 
 ---
 
-## 🧪 Technical Projects
+## Technical Projects
 
 ### Divide & Defend: SOC Lab Project with Micro-Segmentation & Real-Time Monitoring  
 **2025 – Capstone Lab Project**  
@@ -60,7 +60,7 @@ layout: single
 
 ---
 
-## 💼 Professional Experience
+## Professional Experience
 
 ### Photographer & Graphic Designer  
 **SSNUS – Norwalk, CT | 2020 – Present**  
@@ -83,7 +83,7 @@ layout: single
 
 ---
 
-## 🛠️ Technical Skills
+## Technical Skills
 
 ### Programming Languages
 - **Python** – Basic scripting for automation and log parsing  
@@ -115,7 +115,7 @@ layout: single
 
 ---
 
-## 🏆 Certifications & Training
+## Certifications & Training
 
 **In Progress:**  
 - CompTIA Security+ (Scheduled: November 2025)  
@@ -127,7 +127,7 @@ layout: single
 
 ---
 
-## 🎯 Professional Interests
+## Professional Interests
 
 - **Security Operations**: SOC analysis, threat hunting, incident response  
 - **Application Security**: Secure coding, vulnerability assessment  

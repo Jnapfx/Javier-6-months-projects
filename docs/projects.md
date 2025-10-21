@@ -9,7 +9,7 @@ layout: single
   <p>Here are some of the security-focused projects I've developed to demonstrate practical cybersecurity skills and backend development expertise.</p>
 </div>
 
-## 🐶Dog Activity recomender!
+## Dog Activity Recommender
 
 <div style="background:#f8f9fa; padding:1.5rem; border-radius:8px; margin:1rem 0; border-left:4px solid #007bff;">
   <p><strong>Tech Stack:</strong> Python, Pillow, Tkinter </p>
@@ -20,52 +20,51 @@ Dog Activity Recommender is a program that suggests fun activities for your dog 
 
 **Key Features:**
 
-- 💡 **Smart Backend Logic**  
+- **Smart Backend Logic**  
   Evaluates your dog’s profile to suggest personalized activities.
 
-- 🐾 **Tailored Questions**  
+- **Tailored Questions** 
   Based on your dog’s energy level, size, temperament, and preferences.
 
-- 🎯 **Personalized Recommendations**  
+- **Personalized Recommendations**  
   Designed to promote your pet’s health, happiness, and well-being.
 
-- 🖥️ **User-Friendly Interface (Tkinter)**  
+- **User-Friendly Interface (Tkinter)**  
   Intuitive GUI built with Tkinter for a smooth user experience.
 
-- 🌄 **Image Support**  
+- **Image Support**  
   Integrated with the Pillow library to display and handle images.
 
-- ⛅ **Weather Integration**  
+- **Weather Integration**  
   Recommends activities suitable for current weather conditions.
 
-- 🌗 **Light & Dark Theme Toggle**  
+- **Light & Dark Theme Toggle**  
   Switch themes for comfort and aesthetics.
 
-- 🖱️ **Hover Effects**  
+- **Hover Effects**  
   Enhanced button interactivity for better usability.
 
-- 📋 **Copy to Clipboard**  
+- **Copy to Clipboard**  
   Instantly copy your dog’s recommended activities.
-dog
-- 📄 **Export to .TXT File**  
+- **Export to .TXT File** 
   Save activity results to a text file for easy reference.
 
-### 🚀 Future Plans
+### Future Plans
 
-- 🤖 **AI-Powered Recommendations**  
+- **AI-Powered Recommendations**  
   In future releases, we plan to integrate AI features that will make the activity suggestions smarter and virtually infinite — dynamically adapting to your dog's evolving needs, preferences, and behavior patterns.
 
 
 ---
 
-👉 **[Try the Dog Activity Recommender!](https://github.com/Jnapfx/Javier-6-months-projects/blob/main/semester_1/python_2/doggy_v7.0.py)**  
+**[Try the Dog Activity Recommender!](https://github.com/Jnapfx/Javier-6-months-projects/blob/main/semester_1/python_2/doggy_v7.0.py)**  
 (Runs in Python — copy the code or clone the repo to test it locally.)
 
 
 
 ---
 
-## 🚨 Divide & Defend: A Hands-On SOC Lab Project with Micro-Segmentation 
+## Divide & Defend: A Hands-On SOC Lab Project with Micro-Segmentation 
 
 <div style="background:#f8f9fa; padding:1.5rem; border-radius:8px; margin:1rem 0; border-left:4px solid #28a745;">
   <p><strong>Tech Stack:</strong> Python, Wazuh, MISP, Docker</p>
@@ -75,15 +74,15 @@ dog
 This project simulates the core responsibilities of a **SOC Analyst** by building a functional lab environment using virtual machines and open-source tools. It emphasizes practical skills in threat detection, alert triage, and incident response. A key focus is the use of **micro-segmentation** as a proactive defense strategy to enhance network security.
 
 **Key Components:**
-- 🖥 **Virtual SOC Lab Deployment**: Multi-VM setup simulating attacker, victim, and SIEM systems  
-- 🛡 **Micro-Segmentation Implementation**: Firewall rules to block unauthorized lateral movement  
-- 📡 **SIEM Configuration & Alerting**: Wazuh/ELK/Splunk for log ingestion, detection rules, and alerts  
-- 🚨 **Incident Triage & Reporting**: Investigation of alerts, false positive reduction, and documentation  
+- **Virtual SOC Lab Deployment**: Multi-VM setup simulating attacker, victim, and SIEM systems  
+- **Micro-Segmentation Implementation**: Firewall rules to block unauthorized lateral movement  
+- **SIEM Configuration & Alerting**: Wazuh/ELK/Splunk for log ingestion, detection rules, and alerts  
+- **Incident Triage & Reporting**: Investigation of alerts, false positive reduction, and documentation  
 
 **Impact:**
-- 📉 Reduced false positive rate by 40% through tuning Wazuh detection rules and filtering noise from simulated attack logs  
-- ⏱ Decreased mean time to detection (MTTD) by 25% by streamlining alert triage in the SOC lab environment  
-- 📋 Standardized incident response across the project using documented playbooks and consistent reporting procedures  
+- Reduced false positive rate by 40% through tuning Wazuh detection rules and filtering noise from simulated attack logs  
+- Decreased mean time to detection (MTTD) by 25% by streamlining alert triage in the SOC lab environment  
+- Standardized incident response across the project using documented playbooks and consistent reporting procedures  
 
 
 ---

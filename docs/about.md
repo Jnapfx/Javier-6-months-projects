@@ -20,11 +20,11 @@ Currently pursuing my **Cybersecurity degree at DAE** *(Expected Graduation: Oct
 ---
 
 ### Core Interests & Expertise  
-- **🔍 Threat Modeling** – Analyzing system architectures to identify potential attack vectors and applying countermeasures.  
-- **🚨 Incident Response** – Developing and executing response procedures from detection through remediation.  
-- **📝 Detailed Documentation** – Creating clear, structured, and visually engaging documentation for SOC workflows, detection rules, and incident response playbooks.  
-- **💻 VM & Container Environments** – Building and configuring virtualized and containerized labs using VMs and Docker for testing, training, and simulating security incidents. 
-- **🤖 Prompt Engineering**– Designing and refining prompts for AI tools to generate accurate, efficient, and context-aware outputs, supporting security workflows and automation.
+- **Threat Modeling** – Analyzing system architectures to identify potential attack vectors and applying countermeasures.  
+- **Incident Response** – Developing and executing response procedures from detection through remediation.  
+- **Detailed Documentation** – Creating clear, structured, and visually engaging documentation for SOC workflows, detection rules, and incident response playbooks.  
+- **VM & Container Environments** – Building and configuring virtualized and containerized labs using VMs and Docker for testing, training, and simulating security incidents. 
+- **Prompt Engineering**– Designing and refining prompts for AI tools to generate accurate, efficient, and context-aware outputs, supporting security workflows and automation.
 
 ---
 
@@ -41,7 +41,7 @@ Currently pursuing my **Cybersecurity degree at DAE** *(Expected Graduation: Oct
 
 ---
 
-💼 **Looking for:** SOC Analyst role in a collaborative, growth-oriented team. 
+**Looking for:** SOC Analyst role in a collaborative, growth-oriented team. 
 
 ---
 
