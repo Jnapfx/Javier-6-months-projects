@@ -9,6 +9,27 @@ layout: single
   <p>Here are some of the security-focused projects I've developed to demonstrate practical cybersecurity skills and backend development expertise.</p>
 </div>
 
+
+## Divide & Defend: A Hands-On SOC Lab Project with Micro-Segmentation 
+
+<div style="background:#f8f9fa; padding:1.5rem; border-radius:8px; margin:1rem 0; border-left:4px solid #28a745;">
+  <p><strong>Tech Stack:</strong> Python, Wazuh, MISP, Docker, Grafana, Loki</p>
+  <p><strong>Duration:</strong> 3 months | <strong>Status:</strong> Completed</p>
+</div>
+
+This project simulates the core responsibilities of a **SOC Analyst** by building a functional lab environment using virtual machines and open-source tools. It emphasizes practical skills in threat detection, alert triage, and incident response. A key focus is the use of **micro-segmentation** as a proactive defense strategy to enhance network security.
+
+**Key Components:**
+- **Virtual SOC Lab Deployment**: Multi-VM setup simulating attacker, victim, and SIEM systems  
+- **Micro-Segmentation Implementation**: Firewall rules to block unauthorized lateral movement  
+- **SIEM Configuration & Alerting**: Wazuh/ELK/Splunk for log ingestion, detection rules, and alerts  
+- **Incident Triage & Reporting**: Investigation of alerts, false positive reduction, and documentation  
+
+**Impact:**
+- Reduced false positive rate by 40% through tuning Wazuh detection rules and filtering noise from simulated attack logs  
+- Decreased mean time to detection (MTTD) by 25% by streamlining alert triage in the SOC lab environment  
+- Standardized incident response across the project using documented playbooks and consistent reporting procedures  
+
 ## Dog Activity Recommender
 
 <div style="background:#f8f9fa; padding:1.5rem; border-radius:8px; margin:1rem 0; border-left:4px solid #007bff;">
@@ -64,25 +85,6 @@ Dog Activity Recommender is a program that suggests fun activities for your dog 
 
 ---
 
-## Divide & Defend: A Hands-On SOC Lab Project with Micro-Segmentation 
-
-<div style="background:#f8f9fa; padding:1.5rem; border-radius:8px; margin:1rem 0; border-left:4px solid #28a745;">
-  <p><strong>Tech Stack:</strong> Python, Wazuh, MISP, Docker</p>
-  <p><strong>Duration:</strong> 3 months | <strong>Status:</strong> In Development</p>
-</div>
-
-This project simulates the core responsibilities of a **SOC Analyst** by building a functional lab environment using virtual machines and open-source tools. It emphasizes practical skills in threat detection, alert triage, and incident response. A key focus is the use of **micro-segmentation** as a proactive defense strategy to enhance network security.
-
-**Key Components:**
-- **Virtual SOC Lab Deployment**: Multi-VM setup simulating attacker, victim, and SIEM systems  
-- **Micro-Segmentation Implementation**: Firewall rules to block unauthorized lateral movement  
-- **SIEM Configuration & Alerting**: Wazuh/ELK/Splunk for log ingestion, detection rules, and alerts  
-- **Incident Triage & Reporting**: Investigation of alerts, false positive reduction, and documentation  
-
-**Impact:**
-- Reduced false positive rate by 40% through tuning Wazuh detection rules and filtering noise from simulated attack logs  
-- Decreased mean time to detection (MTTD) by 25% by streamlining alert triage in the SOC lab environment  
-- Standardized incident response across the project using documented playbooks and consistent reporting procedures  
 
 
 ---
