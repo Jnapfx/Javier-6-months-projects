@@ -1,0 +1,70 @@
+
+# Link Validation Report
+
+## Summary
+- Total links found: 999
+- Valid links: 939
+- Broken links: 60
+- Success rate: 94.0% if total_links > 0 else 0
+
+## Broken Links
+- **INTERNAL**: `Failed password for root from 203.0.113.45 port 44567 ssh2` in `security_operation_center_1/threat_detection_principles/README.md`
+- **INTERNAL**: `Failed password for root from 203.0.113.45 port 44567 ssh2` in `security_operation_center_1/threat_detection_principles/README.md`
+- **INTERNAL**: `client 192.168.10.25#50432: query (cache) TXT xyz.maliciousdomain.com IN` in `security_operation_center_1/threat_detection_principles/README.md`
+- **INTERNAL**: `./screenshots/._wazuh_dashboard_1.PNG` in `security_monitoring_1/wazuh_documentation_package/README.md`
+- **INTERNAL**: `Failed password for root from 192.168.1.212` in `security_monitoring_1/security_event_analysis/README.md`
+- **INTERNAL**: `Failed password for root from 192.168.1.212` in `security_monitoring_1/security_event_analysis/README.md`
+- **INTERNAL**: `screenshot_summary.png` in `cyber_threats_and_vulnerabilities_1/identify_and_analyze_cyber_threats/README.md`
+- **INTERNAL**: `screenshot_hashes.png` in `cyber_threats_and_vulnerabilities_1/identify_and_analyze_cyber_threats/README.md`
+- **INTERNAL**: `screenshot_vt_detections.png` in `cyber_threats_and_vulnerabilities_1/identify_and_analyze_cyber_threats/README.md`
+- **INTERNAL**: `screenshot_process_tree.png` in `cyber_threats_and_vulnerabilities_1/identify_and_analyze_cyber_threats/README.md`
+- **INTERNAL**: `screenshot_dropped_files.png` in `cyber_threats_and_vulnerabilities_1/identify_and_analyze_cyber_threats/README.md`
+- **INTERNAL**: `screenshot_iocs.png` in `cyber_threats_and_vulnerabilities_1/identify_and_analyze_cyber_threats/README.md`
+- **INTERNAL**: `screenshot_remediation.png` in `cyber_threats_and_vulnerabilities_1/identify_and_analyze_cyber_threats/README.md`
+- **INTERNAL**: `screenshot_conclusion.png` in `cyber_threats_and_vulnerabilities_1/identify_and_analyze_cyber_threats/README.md`
+- **INTERNAL**: `Failed password for root from 203.0.113.45 port 44567 ssh2` in `security_operation_center_1/threat_detection_principles/readme.md`
+- **INTERNAL**: `Failed password for root from 203.0.113.45 port 44567 ssh2` in `security_operation_center_1/threat_detection_principles/readme.md`
+- **INTERNAL**: `client 192.168.10.25#50432: query (cache) TXT xyz.maliciousdomain.com IN` in `security_operation_center_1/threat_detection_principles/readme.md`
+- **INTERNAL**: `./screenshots/._wazuh_dashboard_1.PNG` in `security_monitoring_1/wazuh_documentation_package/readme.md`
+- **INTERNAL**: `Failed password for root from 192.168.1.212` in `security_monitoring_1/security_event_analysis/readme.md`
+- **INTERNAL**: `Failed password for root from 192.168.1.212` in `security_monitoring_1/security_event_analysis/readme.md`
+- **INTERNAL**: `screenshot_summary.png` in `cyber_threats_and_vulnerabilities_1/identify_and_analyze_cyber_threats/readme.md`
+- **INTERNAL**: `screenshot_hashes.png` in `cyber_threats_and_vulnerabilities_1/identify_and_analyze_cyber_threats/readme.md`
+- **INTERNAL**: `screenshot_vt_detections.png` in `cyber_threats_and_vulnerabilities_1/identify_and_analyze_cyber_threats/readme.md`
+- **INTERNAL**: `screenshot_process_tree.png` in `cyber_threats_and_vulnerabilities_1/identify_and_analyze_cyber_threats/readme.md`
+- **INTERNAL**: `screenshot_dropped_files.png` in `cyber_threats_and_vulnerabilities_1/identify_and_analyze_cyber_threats/readme.md`
+- **INTERNAL**: `screenshot_iocs.png` in `cyber_threats_and_vulnerabilities_1/identify_and_analyze_cyber_threats/readme.md`
+- **INTERNAL**: `screenshot_remediation.png` in `cyber_threats_and_vulnerabilities_1/identify_and_analyze_cyber_threats/readme.md`
+- **INTERNAL**: `screenshot_conclusion.png` in `cyber_threats_and_vulnerabilities_1/identify_and_analyze_cyber_threats/readme.md`
+- **INTERNAL**: `Failed password for root from 203.0.113.45 port 44567 ssh2` in `security_operation_center_1/threat_detection_principles/Readme.md`
+- **INTERNAL**: `Failed password for root from 203.0.113.45 port 44567 ssh2` in `security_operation_center_1/threat_detection_principles/Readme.md`
+- **INTERNAL**: `client 192.168.10.25#50432: query (cache) TXT xyz.maliciousdomain.com IN` in `security_operation_center_1/threat_detection_principles/Readme.md`
+- **INTERNAL**: `./screenshots/._wazuh_dashboard_1.PNG` in `security_monitoring_1/wazuh_documentation_package/Readme.md`
+- **INTERNAL**: `Failed password for root from 192.168.1.212` in `security_monitoring_1/security_event_analysis/Readme.md`
+- **INTERNAL**: `Failed password for root from 192.168.1.212` in `security_monitoring_1/security_event_analysis/Readme.md`
+- **INTERNAL**: `screenshot_summary.png` in `cyber_threats_and_vulnerabilities_1/identify_and_analyze_cyber_threats/Readme.md`
+- **INTERNAL**: `screenshot_hashes.png` in `cyber_threats_and_vulnerabilities_1/identify_and_analyze_cyber_threats/Readme.md`
+- **INTERNAL**: `screenshot_vt_detections.png` in `cyber_threats_and_vulnerabilities_1/identify_and_analyze_cyber_threats/Readme.md`
+- **INTERNAL**: `screenshot_process_tree.png` in `cyber_threats_and_vulnerabilities_1/identify_and_analyze_cyber_threats/Readme.md`
+- **INTERNAL**: `screenshot_dropped_files.png` in `cyber_threats_and_vulnerabilities_1/identify_and_analyze_cyber_threats/Readme.md`
+- **INTERNAL**: `screenshot_iocs.png` in `cyber_threats_and_vulnerabilities_1/identify_and_analyze_cyber_threats/Readme.md`
+- **INTERNAL**: `screenshot_remediation.png` in `cyber_threats_and_vulnerabilities_1/identify_and_analyze_cyber_threats/Readme.md`
+- **INTERNAL**: `screenshot_conclusion.png` in `cyber_threats_and_vulnerabilities_1/identify_and_analyze_cyber_threats/Readme.md`
+- **EXTERNAL**: `https://linkedin.com/in/javier-napoles` in `README.md`
+- **EXTERNAL**: `http://localhost:3001` in `learning/README.md`
+- **EXTERNAL**: `http://localhost:8080` in `cyber_threats_and_vulnerabilities_1/implement_threat_intelligence_principles/README.md`
+- **EXTERNAL**: `https://github.com/Jnapfx/Javier-6-months-projects/blob/main/semester_3/documentation/cybersecurity_basics_1/apply_encryption_techniques/SHA.png?raw=true` in `cybersecurity_basics_1/apply_encryption_techniques/README.md`
+- **EXTERNAL**: `https://github.com/Jnapfx/Javier-6-months-projects/blob/main/semester_3/documentation/cybersecurity_basics_1/apply_encryption_techniques/AES_encryption_example.png?raw=true` in `cybersecurity_basics_1/apply_encryption_techniques/README.md`
+- **EXTERNAL**: `https://github.com/Jnapfx/Javier-6-months-projects/blob/main/semester_3/documentation/cybersecurity_basics_1/apply_encryption_techniques/MD5_hash.png?raw=true` in `cybersecurity_basics_1/apply_encryption_techniques/README.md`
+- **EXTERNAL**: `https://linkedin.com/in/javier-napoles` in `readme.md`
+- **EXTERNAL**: `http://localhost:3001` in `learning/readme.md`
+- **EXTERNAL**: `http://localhost:8080` in `cyber_threats_and_vulnerabilities_1/implement_threat_intelligence_principles/readme.md`
+- **EXTERNAL**: `https://github.com/Jnapfx/Javier-6-months-projects/blob/main/semester_3/documentation/cybersecurity_basics_1/apply_encryption_techniques/SHA.png?raw=true` in `cybersecurity_basics_1/apply_encryption_techniques/readme.md`
+- **EXTERNAL**: `https://github.com/Jnapfx/Javier-6-months-projects/blob/main/semester_3/documentation/cybersecurity_basics_1/apply_encryption_techniques/AES_encryption_example.png?raw=true` in `cybersecurity_basics_1/apply_encryption_techniques/readme.md`
+- **EXTERNAL**: `https://github.com/Jnapfx/Javier-6-months-projects/blob/main/semester_3/documentation/cybersecurity_basics_1/apply_encryption_techniques/MD5_hash.png?raw=true` in `cybersecurity_basics_1/apply_encryption_techniques/readme.md`
+- **EXTERNAL**: `https://linkedin.com/in/javier-napoles` in `Readme.md`
+- **EXTERNAL**: `http://localhost:3001` in `learning/Readme.md`
+- **EXTERNAL**: `http://localhost:8080` in `cyber_threats_and_vulnerabilities_1/implement_threat_intelligence_principles/Readme.md`
+- **EXTERNAL**: `https://github.com/Jnapfx/Javier-6-months-projects/blob/main/semester_3/documentation/cybersecurity_basics_1/apply_encryption_techniques/SHA.png?raw=true` in `cybersecurity_basics_1/apply_encryption_techniques/Readme.md`
+- **EXTERNAL**: `https://github.com/Jnapfx/Javier-6-months-projects/blob/main/semester_3/documentation/cybersecurity_basics_1/apply_encryption_techniques/AES_encryption_example.png?raw=true` in `cybersecurity_basics_1/apply_encryption_techniques/Readme.md`
+- **EXTERNAL**: `https://github.com/Jnapfx/Javier-6-months-projects/blob/main/semester_3/documentation/cybersecurity_basics_1/apply_encryption_techniques/MD5_hash.png?raw=true` in `cybersecurity_basics_1/apply_encryption_techniques/Readme.md`
