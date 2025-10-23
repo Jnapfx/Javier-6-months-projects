@@ -124,3 +124,5 @@ backup/experiments/*/temp/
 backup/archives/*.zip
 backup/archives/*.tar.gz
 
+.DS_Store
+.DS_Store
