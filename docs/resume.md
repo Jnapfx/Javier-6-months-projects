@@ -29,16 +29,23 @@ layout: single
 
 ## Education
 
+**CompTIA Security+ (SY0-701) — In Progress**  
+*Preparing for exam*  
+*(Expected January 2026)*
+
 **District Arts & Education (DAE)**  
 *Cybersecurity Program*  
-*Expected Graduation: Oct 2025*  
+*(2025)*
+
+**Relevant Coursework:**  
+*Google Cybersecurity Certificate*  
+*(2024)*
 
 **Faculty of Architecture and Design (FAD)**  
 *Graphic Design*  
-*(2010–2015)*  
+*(2015)*
 
-**Relevant Coursework:**  
-*Google Cybersecurity Certificate (2024)*
+
 
 
 ---

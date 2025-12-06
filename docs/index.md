@@ -9,7 +9,7 @@ permalink: /
        style="max-width:160px; border-radius:12%; box-shadow:0 4px 12px rgba(0,0,0,.15);">
   <div>
     <h1 style="margin:0; color:#2c3e50;">Javier Napoles</h1>
-    <p style="margin:.5rem 0; font-size:1.1rem; color:#34495e;">Cybersecurity Student · Graduating Oct 2025</p>
+    <p style="margin:.5rem 0; font-size:1.1rem; color:#34495e;">DAE Cybersecurity Graduate · Oct 2025</p>
     <p style="margin:.5rem 0; line-height:1.6;">Focused on SOC analysis and blue-team operations — I build labs, tune detections, and write playbooks so threats get confused, frustrated, and eventually give up.</p>
   </div>
 </div>
@@ -25,7 +25,8 @@ I'm passionate about building **secure, reliable systems** that help organizatio
 
 ### Current Focus
 
-As I approach graduation in **Oct 2025**, I'm seeking opportunities in **SOC Analyst** roles where I can contribute to building robust defense systems and continue learning from experienced security professionals.
+Now that I’ve completed the DAE Cybersecurity Program, I’m pursuing SOC Analyst opportunities where I can apply my training in monitoring, threat detection, and incident response, while actively preparing for the CompTIA Security+ certification.
+
 
 ---
 
