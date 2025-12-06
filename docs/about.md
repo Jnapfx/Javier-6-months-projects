@@ -11,11 +11,11 @@ layout: single
 
 ## My Journey in Cybersecurity 
 
-Hi, I’m **Javier Napoles** — a Cybersecurity student focused on SOC Analysis, blending a decade of design experience with a passion for defending enterprise environments.
-I’m **actively developing** my technical skills by building **hands-on labs**, fine-tuning detections, and creating **repeatable playbooks** to enhance blue-team operations. 
+Hi, I’m **Javier Napoles** — a cybersecurity professional focused on SOC Analysis, blending a decade of design experience with a passion for defending enterprise environments.  
+I’m **actively developing** my technical skills by building **hands-on labs**, fine-tuning detections, and creating **repeatable playbooks** to enhance blue-team operations.
 
+Having completed my **Cybersecurity Program at DAE (Oct 2025)**, I’m now preparing for the **CompTIA Security+ certification** and looking for a **SOC Analyst role** where I can **continue learning** and contribute to robust defense systems.
 
-Currently pursuing my **Cybersecurity degree at DAE** *(Expected Graduation: October 2025)*, I’m looking for a **SOC Analyst role** where I can **continue learning** and contribute to robust defense systems.  
 
 ---
 
